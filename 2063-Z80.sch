@@ -13,176 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L 74xx:7400 U11
-U 1 1 61038EB5
-P 1350 900
-F 0 "U11" H 1350 1225 50  0000 C CNN
-F 1 "74LS00" H 1350 1134 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1350 900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn7400" H 1350 900 50  0001 C CNN
-F 4 "296-1626-ND‎" H 1350 900 50  0001 C CNN "Digi-Key_PN"
-F 5 "SN74LS00N‎" H 1350 900 50  0001 C CNN "MPN"
-	1    1350 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:7400 U11
-U 2 1 6103B52C
-P 1350 1500
-F 0 "U11" H 1350 1300 50  0000 C CNN
-F 1 "74LS00" H 1350 1200 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1350 1500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn7400" H 1350 1500 50  0001 C CNN
-F 4 "296-1626-ND‎" H 1350 1500 50  0001 C CNN "Digi-Key_PN"
-F 5 "SN74LS00N‎" H 1350 1500 50  0001 C CNN "MPN"
-	2    1350 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U10
-U 1 1 6103CA65
-P 2600 1000
-F 0 "U10" H 2600 1325 50  0000 C CNN
-F 1 "74LS32" H 2600 1234 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2600 1000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 2600 1000 50  0001 C CNN
-F 4 "296-36151-5-ND‎" H 2600 1000 50  0001 C CNN "Digi-Key_PN"
-F 5 "‎SN74LS32NE4‎" H 2600 1000 50  0001 C CNN "MPN"
-	1    2600 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U10
-U 2 1 6103D346
-P 2650 1600
-F 0 "U10" H 2650 1925 50  0000 C CNN
-F 1 "74LS32" H 2650 1834 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2650 1600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 2650 1600 50  0001 C CNN
-F 4 "296-36151-5-ND‎" H 2650 1600 50  0001 C CNN "Digi-Key_PN"
-F 5 "‎SN74LS32NE4‎" H 2650 1600 50  0001 C CNN "MPN"
-	2    2650 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS138 U9
-U 1 1 61043FF4
-P 1700 6450
-F 0 "U9" H 1950 7050 50  0000 C CNN
-F 1 "74LS138" H 1950 6950 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 1700 6450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 1700 6450 50  0001 C CNN
-F 4 "296-1639-5-ND‎" H 1700 6450 50  0001 C CNN "Digi-Key_PN"
-F 5 "‎SN74LS138N‎" H 1700 6450 50  0001 C CNN "MPN"
-	1    1700 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 61056FFD
-P 15850 8400
-F 0 "H1" H 15950 8446 50  0000 L CNN
-F 1 "MountingHole" H 15950 8355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm" H 15850 8400 50  0001 C CNN
-F 3 "~" H 15850 8400 50  0001 C CNN
-	1    15850 8400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 610582DE
-P 15850 8600
-F 0 "H2" H 15950 8646 50  0000 L CNN
-F 1 "MountingHole" H 15950 8555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm" H 15850 8600 50  0001 C CNN
-F 3 "~" H 15850 8600 50  0001 C CNN
-	1    15850 8600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 610584D1
-P 15850 8800
-F 0 "H3" H 15950 8846 50  0000 L CNN
-F 1 "MountingHole" H 15950 8755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm" H 15850 8800 50  0001 C CNN
-F 3 "~" H 15850 8800 50  0001 C CNN
-	1    15850 8800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 6105873A
-P 15850 9000
-F 0 "H4" H 15950 9046 50  0000 L CNN
-F 1 "MountingHole" H 15950 8955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm" H 15850 9000 50  0001 C CNN
-F 3 "~" H 15850 9000 50  0001 C CNN
-	1    15850 9000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Interface_UART:MAX3232 U12
-U 1 1 6105D6D6
-P 8100 9150
-F 0 "U12" H 8650 10400 50  0000 C CNN
-F 1 "ICL3232CPZ" H 8650 10300 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 8150 8100 50  0001 L CNN
-F 3 "" H 8100 9250 50  0001 C CNN
-F 4 "ICL3232CPZ-ND‎" H 8100 9150 50  0001 C CNN "Digi-Key_PN"
-F 5 "‎ICL3232CPZ‎" H 8100 9150 50  0001 C CNN "MPN"
-	1    8100 9150
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS374 U6
-U 1 1 61078FB4
-P 1350 9150
-F 0 "U6" H 1650 9900 50  0000 C CNN
-F 1 "74LS374" H 1650 9800 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 1350 9150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 1350 9150 50  0001 C CNN
-F 4 "296-1662-5-ND‎" H 1350 9150 50  0001 C CNN "Digi-Key_PN"
-F 5 "SN74LS374N‎ " H 1350 9150 50  0001 C CNN "MPN"
-	1    1350 9150
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS244 U8
-U 1 1 610875D9
-P 4700 6550
-F 0 "U8" H 5000 7350 50  0000 C CNN
-F 1 "74LS244" H 5000 7250 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 4700 6550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 4700 6550 50  0001 C CNN
-F 4 "296-36148-5-ND‎" H 4700 6550 50  0001 C CNN "Digi-Key_PN"
-F 5 "SN74LS244NE4‎ " H 4700 6550 50  0001 C CNN "MPN"
-	1    4700 6550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 610DF17C
-P 2550 8650
-F 0 "R1" V 2500 8500 50  0000 C CNN
-F 1 "2K7" V 2550 8650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2480 8650 50  0001 C CNN
-F 3 "~" H 2550 8650 50  0001 C CNN
-	1    2550 8650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 610E2DCE
-P 3200 8650
-F 0 "R2" V 3150 8800 50  0000 C CNN
-F 1 "4K7" V 3200 8650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 8650 50  0001 C CNN
-F 3 "~" H 3200 8650 50  0001 C CNN
-	1    3200 8650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1850 8650 2400 8650
 Wire Wire Line
@@ -191,56 +21,12 @@ Wire Wire Line
 	3350 8650 3500 8650
 Wire Wire Line
 	3500 8650 3500 8750
-$Comp
-L Device:R R3
-U 1 1 610F2F09
-P 2550 8750
-F 0 "R3" V 2500 8600 50  0000 C CNN
-F 1 "2K7" V 2550 8750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2480 8750 50  0001 C CNN
-F 3 "~" H 2550 8750 50  0001 C CNN
-	1    2550 8750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 610F2F0F
-P 3200 8750
-F 0 "R4" V 3150 8900 50  0000 C CNN
-F 1 "4K7" V 3200 8750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 8750 50  0001 C CNN
-F 3 "~" H 3200 8750 50  0001 C CNN
-	1    3200 8750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1850 8750 2400 8750
 Wire Wire Line
 	2700 8750 3050 8750
 Wire Wire Line
 	3350 8750 3500 8750
-$Comp
-L Device:R R5
-U 1 1 610F341C
-P 2550 8850
-F 0 "R5" V 2500 8700 50  0000 C CNN
-F 1 "2K7" V 2550 8850 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2480 8850 50  0001 C CNN
-F 3 "~" H 2550 8850 50  0001 C CNN
-	1    2550 8850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 610F3422
-P 3200 8850
-F 0 "R6" V 3150 9000 50  0000 C CNN
-F 1 "4K7" V 3200 8850 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 8850 50  0001 C CNN
-F 3 "~" H 3200 8850 50  0001 C CNN
-	1    3200 8850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1850 8850 2400 8850
 Wire Wire Line
@@ -263,114 +49,6 @@ F 2 "" H 3500 8900 50  0001 C CNN
 F 3 "" H 3500 8900 50  0001 C CNN
 	1    3500 8900
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 6110287F
-P 4500 950
-F 0 "C3" H 4592 996 50  0000 L CNN
-F 1 ".1" H 4592 905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4500 950 50  0001 C CNN
-F 3 "~" H 4500 950 50  0001 C CNN
-F 4 "399-9976-ND" H 4500 950 50  0001 C CNN "Digi-Key_PN"
-	1    4500 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C4
-U 1 1 61103F12
-P 4800 950
-F 0 "C4" H 4892 996 50  0000 L CNN
-F 1 ".1" H 4892 905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4800 950 50  0001 C CNN
-F 3 "~" H 4800 950 50  0001 C CNN
-F 4 "399-9976-ND" H 4800 950 50  0001 C CNN "Digi-Key_PN"
-	1    4800 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 611041CB
-P 5100 950
-F 0 "C5" H 5192 996 50  0000 L CNN
-F 1 ".1" H 5192 905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5100 950 50  0001 C CNN
-F 3 "~" H 5100 950 50  0001 C CNN
-F 4 "399-9976-ND" H 5100 950 50  0001 C CNN "Digi-Key_PN"
-	1    5100 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 611044AA
-P 5400 950
-F 0 "C6" H 5492 996 50  0000 L CNN
-F 1 ".1" H 5492 905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5400 950 50  0001 C CNN
-F 3 "~" H 5400 950 50  0001 C CNN
-F 4 "399-9976-ND" H 5400 950 50  0001 C CNN "Digi-Key_PN"
-	1    5400 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 611047E5
-P 5700 950
-F 0 "C7" H 5792 996 50  0000 L CNN
-F 1 ".1" H 5792 905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5700 950 50  0001 C CNN
-F 3 "~" H 5700 950 50  0001 C CNN
-F 4 "399-9976-ND" H 5700 950 50  0001 C CNN "Digi-Key_PN"
-	1    5700 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 6110AA48
-P 7000 8400
-F 0 "C2" H 7092 8446 50  0000 L CNN
-F 1 ".1" H 7092 8355 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 7000 8400 50  0001 C CNN
-F 3 "~" H 7000 8400 50  0001 C CNN
-F 4 "399-9976-ND" H 7000 8400 50  0001 C CNN "Digi-Key_PN"
-	1    7000 8400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 6110CB37
-P 9150 8350
-F 0 "C1" H 9242 8396 50  0000 L CNN
-F 1 ".1" H 9242 8305 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 9150 8350 50  0001 C CNN
-F 3 "~" H 9150 8350 50  0001 C CNN
-F 4 "399-9976-ND" H 9150 8350 50  0001 C CNN "Digi-Key_PN"
-	1    9150 8350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C11
-U 1 1 61112693
-P 9200 8750
-F 0 "C11" V 9100 8600 50  0000 C CNN
-F 1 ".1" V 9050 8750 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 9200 8750 50  0001 C CNN
-F 3 "~" H 9200 8750 50  0001 C CNN
-F 4 "399-9976-ND" H 9200 8750 50  0001 C CNN "Digi-Key_PN"
-	1    9200 8750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C12
-U 1 1 61112BC7
-P 9200 9050
-F 0 "C12" V 9100 8900 50  0000 C CNN
-F 1 ".1" V 9062 9050 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 9200 9050 50  0001 C CNN
-F 3 "~" H 9200 9050 50  0001 C CNN
-F 4 "399-9976-ND" H 9200 9050 50  0001 C CNN "Digi-Key_PN"
-	1    9200 9050
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	8900 9050 9100 9050
@@ -420,42 +98,6 @@ F 3 "" H 8100 10400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8100 10350 8100 10400
-$Comp
-L Device:C_Small C8
-U 1 1 611338A3
-P 6000 950
-F 0 "C8" H 5800 900 50  0000 L CNN
-F 1 ".1" H 5800 1000 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 6000 950 50  0001 C CNN
-F 3 "~" H 6000 950 50  0001 C CNN
-F 4 "399-9976-ND" H 6000 950 50  0001 C CNN "Digi-Key_PN"
-	1    6000 950 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C9
-U 1 1 611338AA
-P 6300 950
-F 0 "C9" H 6392 996 50  0000 L CNN
-F 1 ".1" H 6392 905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 6300 950 50  0001 C CNN
-F 3 "~" H 6300 950 50  0001 C CNN
-F 4 "399-9976-ND" H 6300 950 50  0001 C CNN "Digi-Key_PN"
-	1    6300 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C10
-U 1 1 611338B1
-P 6600 950
-F 0 "C10" H 6692 996 50  0000 L CNN
-F 1 ".1" H 6692 905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 6600 950 50  0001 C CNN
-F 3 "~" H 6600 950 50  0001 C CNN
-F 4 "399-9976-ND" H 6600 950 50  0001 C CNN "Digi-Key_PN"
-	1    6600 950 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 1050 4800 1050
 Connection ~ 4800 1050
@@ -508,79 +150,6 @@ $EndComp
 Connection ~ 5850 1050
 Wire Wire Line
 	5850 1050 6000 1050
-$Comp
-L 74xx:74LS374 U7
-U 1 1 61177DD4
-P 4700 9150
-F 0 "U7" H 5000 9950 50  0000 C CNN
-F 1 "74LS374" H 5000 9850 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 4700 9150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 4700 9150 50  0001 C CNN
-F 4 "296-1662-5-ND‎" H 4700 9150 50  0001 C CNN "Digi-Key_PN"
-F 5 "SN74LS374N‎ " H 4700 9150 50  0001 C CNN "MPN"
-	1    4700 9150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C13
-U 1 1 61181847
-P 4500 1550
-F 0 "C13" H 4592 1596 50  0000 L CNN
-F 1 ".1" H 4592 1505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4500 1550 50  0001 C CNN
-F 3 "~" H 4500 1550 50  0001 C CNN
-F 4 "399-9976-ND" H 4500 1550 50  0001 C CNN "Digi-Key_PN"
-	1    4500 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C14
-U 1 1 6118184E
-P 4800 1550
-F 0 "C14" H 4892 1596 50  0000 L CNN
-F 1 ".1" H 4892 1505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4800 1550 50  0001 C CNN
-F 3 "~" H 4800 1550 50  0001 C CNN
-F 4 "399-9976-ND" H 4800 1550 50  0001 C CNN "Digi-Key_PN"
-	1    4800 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C15
-U 1 1 61181855
-P 5100 1550
-F 0 "C15" H 5192 1596 50  0000 L CNN
-F 1 ".1" H 5192 1505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5100 1550 50  0001 C CNN
-F 3 "~" H 5100 1550 50  0001 C CNN
-F 4 "399-9976-ND" H 5100 1550 50  0001 C CNN "Digi-Key_PN"
-	1    5100 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C16
-U 1 1 6118185C
-P 5400 1550
-F 0 "C16" H 5492 1596 50  0000 L CNN
-F 1 ".1" H 5492 1505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5400 1550 50  0001 C CNN
-F 3 "~" H 5400 1550 50  0001 C CNN
-F 4 "399-9976-ND" H 5400 1550 50  0001 C CNN "Digi-Key_PN"
-	1    5400 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C17
-U 1 1 61181863
-P 13450 8200
-F 0 "C17" H 13250 8250 50  0000 L CNN
-F 1 ".1" H 13300 8150 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 13450 8200 50  0001 C CNN
-F 3 "~" H 13450 8200 50  0001 C CNN
-F 4 "399-9976-ND" H 13450 8200 50  0001 C CNN "Digi-Key_PN"
-	1    13450 8200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 1650 4800 1650
 Connection ~ 4800 1650
@@ -615,28 +184,6 @@ $EndComp
 Connection ~ 5250 1650
 Wire Wire Line
 	5250 1650 5400 1650
-$Comp
-L Device:CP1_Small C18
-U 1 1 6120A448
-P 11950 1200
-F 0 "C18" H 12041 1246 50  0000 L CNN
-F 1 "10uF" H 12041 1155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 11950 1200 50  0001 C CNN
-F 3 "~" H 11950 1200 50  0001 C CNN
-	1    11950 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C19
-U 1 1 6120C95E
-P 10350 1200
-F 0 "C19" H 10441 1246 50  0000 L CNN
-F 1 "10uF" H 10441 1155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 10350 1200 50  0001 C CNN
-F 3 "~" H 10350 1200 50  0001 C CNN
-	1    10350 1200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9850 6100 10100 6100
 Wire Wire Line
@@ -906,19 +453,6 @@ Wire Wire Line
 	8100 4700 8450 4700
 Text Label 8100 4700 0    50   ~ 0
 CLK
-$Comp
-L jb-symbol:Z80CPU U1
-U 1 1 61522127
-P 9150 5600
-F 0 "U1" H 9500 7200 50  0000 C CNN
-F 1 "Z80CPU" H 9500 7100 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 9150 6000 50  0001 C CNN
-F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 9150 6000 50  0001 C CNN
-F 4 "269-5062-ND‎" H 9150 5600 50  0001 C CNN "Digi-Key_PN"
-F 5 "Z84C0010PEG‎" H 9150 5600 50  0001 C CNN "MPN"
-	1    9150 5600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13350 2850 13650 2850
 Text Label 13650 2850 2    50   ~ 0
@@ -1192,17 +726,6 @@ Wire Wire Line
 	4000 6950 4000 7050
 Wire Wire Line
 	4000 7050 4200 7050
-$Comp
-L Device:LED_ALT D2
-U 1 1 61913AD1
-P 13500 1700
-F 0 "D2" H 13500 1600 50  0000 C CNN
-F 1 "LED_ALT" H 13200 1850 50  0001 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 13500 1700 50  0001 C CNN
-F 3 "~" H 13500 1700 50  0001 C CNN
-	1    13500 1700
-	-1   0    0    1   
-$EndComp
 Text Notes 13200 1900 0    50   ~ 0
 Disk Activity
 Wire Wire Line
@@ -1232,17 +755,6 @@ F 3 "" H 12850 1600 50  0001 C CNN
 	1    12850 1600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R8
-U 1 1 61947C39
-P 13100 1700
-F 0 "R8" V 13000 1700 50  0000 C CNN
-F 1 "680" V 13100 1700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13030 1700 50  0001 C CNN
-F 3 "~" H 13100 1700 50  0001 C CNN
-	1    13100 1700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	11600 1050 11900 1050
 Wire Wire Line
@@ -1251,17 +763,6 @@ Wire Wire Line
 	12850 1700 12950 1700
 Wire Wire Line
 	13650 1700 14100 1700
-$Comp
-L Device:LED_ALT D1
-U 1 1 619885AA
-P 13500 1050
-F 0 "D1" H 13500 950 50  0000 C CNN
-F 1 "LED_ALT" H 13493 1175 50  0001 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 13500 1050 50  0001 C CNN
-F 3 "~" H 13500 1050 50  0001 C CNN
-	1    13500 1050
-	-1   0    0    1   
-$EndComp
 Text Notes 13200 1250 0    50   ~ 0
 Power
 Wire Wire Line
@@ -1276,17 +777,6 @@ F 2 "" H 12850 950 50  0001 C CNN
 F 3 "" H 12850 950 50  0001 C CNN
 	1    12850 950 
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 619885B8
-P 13100 1050
-F 0 "R9" V 13000 1050 50  0000 C CNN
-F 1 "680" V 13100 1050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13030 1050 50  0001 C CNN
-F 3 "~" H 13100 1050 50  0001 C CNN
-	1    13100 1050
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	12850 950  12850 1050
@@ -1477,19 +967,6 @@ Text Label 15000 6600 0    50   ~ 0
 ~NMI
 Text Label 16200 6400 2    50   ~ 0
 ~RESET
-$Comp
-L Oscillator:CXO_DIP8 X1
-U 1 1 61DBCC1A
-P 13050 2850
-F 0 "X1" H 13300 3200 50  0000 L CNN
-F 1 "‎ECS-2100AX-049‎" H 13250 3100 50  0000 L CNN
-F 2 "Oscillator:Oscillator_DIP-8" H 13500 2500 50  0001 C CNN
-F 3 "" H 12950 2850 50  0001 C CNN
-F 4 "XC1159-ND‎" H 13050 2850 50  0001 C CNN "Digi-Key_PN"
-F 5 "ECS-2100AX-049‎ " H 13050 2850 50  0001 C CNN "MPN"
-	1    13050 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	15850 6700 16200 6700
 Wire Wire Line
@@ -1514,17 +991,6 @@ F 1 "+5V" H 14815 6123 50  0000 C CNN
 F 2 "" H 14800 5950 50  0001 C CNN
 F 3 "" H 14800 5950 50  0001 C CNN
 	1    14800 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x20_Counter_Clockwise J3
-U 1 1 61F13B3D
-P 15550 5900
-F 0 "J3" H 15600 7017 50  0000 C CNN
-F 1 "Conn_02x20_Counter_Clockwise" H 15600 6926 50  0000 C CNN
-F 2 "jb-footprint:PinHeader_2x20_P2.54mm_Vertical_counterclock" H 15550 5900 50  0001 C CNN
-F 3 "~" H 15550 5900 50  0001 C CNN
-	1    15550 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1561,26 +1027,6 @@ Wire Wire Line
 	15600 1100 16200 1100
 Wire Wire Line
 	16200 1100 16200 1150
-$Comp
-L dk_USB-DVI-HDMI-Connectors:0548190519 J6
-U 1 1 611986BF
-P 15300 1300
-F 0 "J6" H 15325 1952 60  0000 C CNN
-F 1 "0548190519" H 15325 1846 60  0000 C CNN
-F 2 "digikey-footprints:USB_Mini_B_Female_548190519" H 15500 1500 60  0001 L CNN
-F 3 "https://www.molex.com/pdm_docs/sd/548190519_sd.pdf" H 15500 1600 60  0001 L CNN
-F 4 "A135698-ND" H 15500 1700 60  0001 L CNN "Digi-Key_PN"
-F 5 "0548190519" H 15500 1800 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 15500 1900 60  0001 L CNN "Category"
-F 7 "USB, DVI, HDMI Connectors" H 15500 2000 60  0001 L CNN "Family"
-F 8 "https://www.molex.com/pdm_docs/sd/548190519_sd.pdf" H 15500 2100 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/molex/0548190519/WM17115-ND/773802" H 15500 2200 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN RCPT USB2.0 MINI B 5P R/A" H 15500 2300 60  0001 L CNN "Description"
-F 11 "Molex" H 15500 2400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 15500 2500 60  0001 L CNN "Status"
-	1    15300 1300
-	1    0    0    -1  
-$EndComp
 NoConn ~ 15600 1200
 NoConn ~ 15600 1300
 NoConn ~ 15600 1400
@@ -1588,18 +1034,6 @@ Text Notes 14750 2250 0    118  ~ 24
 USB Power Only
 Text Notes 14750 7200 0    118  ~ 24
 Z80 Pins Breakout
-$Comp
-L Device:R_Network08 RN1
-U 1 1 610D41D2
-P 10850 7550
-F 0 "RN1" V 11375 7550 50  0000 C CNN
-F 1 "10K" V 11284 7550 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 11325 7550 50  0001 C CNN
-F 3 "" H 10850 7550 50  0001 C CNN
-F 4 "4609X-101-103LF-ND‎" H 10850 7550 50  0001 C CNN "Digi-Key_PN"
-	1    10850 7550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8100 6700 8450 6700
 Wire Wire Line
@@ -1610,18 +1044,6 @@ Wire Wire Line
 	11100 7150 11050 7150
 Wire Wire Line
 	8100 4400 8450 4400
-$Comp
-L Device:C_Small C21
-U 1 1 6127B1D0
-P 5700 1550
-F 0 "C21" H 5792 1596 50  0000 L CNN
-F 1 ".1" H 5792 1505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5700 1550 50  0001 C CNN
-F 3 "~" H 5700 1550 50  0001 C CNN
-F 4 "399-9976-ND" H 5700 1550 50  0001 C CNN "Digi-Key_PN"
-	1    5700 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1650 900  1650 1150
 Wire Wire Line
@@ -1786,19 +1208,6 @@ F 3 "" H 1700 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS32 U10
-U 5 1 61CBDDE5
-P 9150 1300
-F 0 "U10" H 9350 1750 50  0000 C CNN
-F 1 "74LS32" H 9350 1650 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9150 1300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9150 1300 50  0001 C CNN
-F 4 "296-36151-5-ND‎" H 9150 1300 50  0001 C CNN "Digi-Key_PN"
-F 5 "‎SN74LS32NE4‎" H 9150 1300 50  0001 C CNN "MPN"
-	5    9150 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0135
 U 1 1 61CC9F6D
 P 9150 750
@@ -1811,19 +1220,6 @@ F 3 "" H 9150 750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9150 750  9150 800 
-$Comp
-L 74xx:7400 U11
-U 5 1 61CF1304
-P 8350 1300
-F 0 "U11" H 8550 1750 50  0000 C CNN
-F 1 "74LS00" H 8550 1650 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8350 1300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn7400" H 8350 1300 50  0001 C CNN
-F 4 "296-1626-ND‎" H 8350 1300 50  0001 C CNN "Digi-Key_PN"
-F 5 "SN74LS00N‎" H 8350 1300 50  0001 C CNN "MPN"
-	5    8350 1300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0136
 U 1 1 61CFCB00
@@ -2020,17 +1416,6 @@ Wire Wire Line
 	15350 4250 14900 4250
 Wire Wire Line
 	16300 3150 15850 3150
-$Comp
-L Connector_Generic:Conn_02x13_Top_Bottom J7
-U 1 1 614C2C3B
-P 15550 3650
-F 0 "J7" H 15600 4400 50  0000 C CNN
-F 1 "Conn_02x13_Top_Bottom" H 15600 4376 50  0001 C CNN
-F 2 "jb-footprint:PinHeader_2x13_P2.54mm_Top_Bottom" H 15550 3650 50  0001 C CNN
-F 3 "~" H 15550 3650 50  0001 C CNN
-	1    15550 3650
-	1    0    0    -1  
-$EndComp
 Text Label 15950 3050 0    50   ~ 0
 ~PRN_LF
 Text Label 15950 3150 0    50   ~ 0
@@ -2125,19 +1510,6 @@ Text Label 6900 9850 0    50   ~ 0
 SIO_RXB
 Text Label 6900 9450 0    50   ~ 0
 SIO_TXB
-$Comp
-L jb-symbol:Z80-SIO-0 U5
-U 1 1 6225CFF1
-P 12700 5550
-F 0 "U5" H 13250 7150 50  0000 C CNN
-F 1 "Z80-SIO-0" H 13300 7050 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 12700 5550 50  0001 C CNN
-F 3 "" H 12700 5550 50  0001 C CNN
-F 4 "269-5062-ND‎" H 12700 5550 50  0001 C CNN "Digi-Key_PN"
-F 5 "Z84C4010PEG‎" H 12700 5550 50  0001 C CNN "MPN"
-	1    12700 5550
-	1    0    0    -1  
-$EndComp
 Text Label 13850 4650 2    50   ~ 0
 SIO_TXA
 Wire Wire Line
@@ -2191,19 +1563,6 @@ Text Label 2700 8750 0    50   ~ 0
 SD_CLK
 Text Label 2700 8850 0    50   ~ 0
 SD_SSEL
-$Comp
-L Connector:Micro_SD_Card_Det J2
-U 1 1 61047A45
-P 14850 8200
-F 0 "J2" H 14800 9017 50  0000 C CNN
-F 1 "DM3D-SF(41)" H 14800 8926 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Hirose_DM3D-SF" H 16900 8900 50  0001 C CNN
-F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 14850 8300 50  0001 C CNN
-F 4 "H126097CT-ND‎" H 14850 8200 50  0001 C CNN "Digi-Key_PN"
-F 5 "‎DM3D-SF(41)‎ " H 14850 8200 50  0001 C CNN "MPN"
-	1    14850 8200
-	1    0    0    -1  
-$EndComp
 NoConn ~ 13950 7800
 Wire Wire Line
 	13600 7900 13950 7900
@@ -2350,17 +1709,6 @@ $EndComp
 Wire Wire Line
 	10050 1050 10350 1050
 Connection ~ 10350 1050
-$Comp
-L jb-symbol:LM1117-3.3 U20
-U 1 1 642BFAB2
-P 11300 1050
-F 0 "U20" H 11300 1292 50  0000 C CNN
-F 1 "LM1117-3.3" H 11300 1201 50  0000 C CNN
-F 2 "digikey-footprints:SOT-223" H 11300 1050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 11300 1050 50  0001 C CNN
-	1    11300 1050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10550 1050 10800 1050
 Wire Wire Line
@@ -2419,18 +1767,6 @@ Connection ~ 13400 7950
 Wire Wire Line
 	13400 7950 13400 7800
 $Comp
-L Device:R_Network08 RN3
-U 1 1 613C16C0
-P 3300 6450
-F 0 "RN3" V 2683 6450 50  0000 C CNN
-F 1 "10K" V 2774 6450 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 3775 6450 50  0001 C CNN
-F 3 "" H 3300 6450 50  0001 C CNN
-F 4 "4609X-101-103LF-ND‎" H 3300 6450 50  0001 C CNN "Digi-Key_PN"
-	1    3300 6450
-	0    -1   1    0   
-$EndComp
-$Comp
 L power:+5V #PWR02
 U 1 1 613C16C6
 P 3000 6050
@@ -2459,32 +1795,6 @@ Wire Wire Line
 	3500 6050 4200 6050
 Text Notes 12300 9850 0    39   ~ 0
 Copyright (C) 2021 John Winans\n\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2.\n\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.2. (http://ohwr.org/cernohl). \nThis documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, \nSATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.  Please see the CERN OHL v.1.2 for applicable conditions\n\nIf you chose to manufacture products based on this design, please notify me (see license section 4.2) via john@winans.org\n
-$Comp
-L Graphic:Logo_Open_Hardware_Small LOGO?
-U 1 1 611D78B5
-P 16250 9600
-AR Path="/611CFEFE/611D78B5" Ref="LOGO?"  Part="1" 
-AR Path="/611D78B5" Ref="LOGO1"  Part="1" 
-F 0 "LOGO1" H 16250 9875 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 16250 9375 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo_11.4x12mm_SilkScreen" H 16250 9600 50  0001 C CNN
-F 3 "~" H 16250 9600 50  0001 C CNN
-	1    16250 9600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Graphic:Logo_Open_Hardware_Small LOGO?
-U 1 1 61291DA5
-P 16200 7850
-AR Path="/611CFEFE/61291DA5" Ref="LOGO?"  Part="1" 
-AR Path="/61291DA5" Ref="LOGO2"  Part="1" 
-F 0 "LOGO2" H 16200 8125 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 16200 7625 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo_5.7x6mm_SilkScreen" H 16200 7850 50  0001 C CNN
-F 3 "~" H 16200 7850 50  0001 C CNN
-	1    16200 7850
-	1    0    0    -1  
-$EndComp
 NoConn ~ 11550 6350
 Text Label 11550 5900 0    50   ~ 0
 A0
@@ -2601,17 +1911,6 @@ Wire Wire Line
 	8900 9650 9950 9650
 Wire Wire Line
 	11350 8650 11400 8650
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J4
-U 1 1 6187E4F0
-P 11600 8450
-F 0 "J4" H 11650 8775 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 11650 8776 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 11600 8450 50  0001 C CNN
-F 3 "~" H 11600 8450 50  0001 C CNN
-	1    11600 8450
-	1    0    0    -1  
-$EndComp
 NoConn ~ 11450 9450
 NoConn ~ 11450 9750
 NoConn ~ 11950 9450
@@ -2638,17 +1937,6 @@ Text Label 11150 9650 0    50   ~ 0
 AUX3
 Wire Wire Line
 	11400 9850 11450 9850
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J5
-U 1 1 61955E78
-P 11650 9650
-F 0 "J5" H 11700 9975 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 11700 9976 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 11650 9650 50  0001 C CNN
-F 3 "~" H 11650 9650 50  0001 C CNN
-	1    11650 9650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8900 9450 10150 9450
 Wire Wire Line
@@ -2693,17 +1981,6 @@ Wire Wire Line
 	10050 9850 10050 10100
 Wire Wire Line
 	10150 9950 10150 9450
-$Comp
-L Connector_Generic:Conn_01x05 J8
-U 1 1 622C74B2
-P 10400 9600
-F 0 "J8" H 10318 9267 50  0000 C CNN
-F 1 "Conn_01x05" H 10318 9266 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10400 9600 50  0001 C CNN
-F 3 "~" H 10400 9600 50  0001 C CNN
-	1    10400 9600
-	-1   0    0    1   
-$EndComp
 Connection ~ 10700 8600
 Wire Wire Line
 	10700 8900 10700 8600
@@ -2716,17 +1993,6 @@ Wire Wire Line
 	10050 10100 10750 10100
 Wire Wire Line
 	9950 8900 10700 8900
-$Comp
-L Connector_Generic:Conn_01x05 J1
-U 1 1 61F7F9D0
-P 10350 8400
-F 0 "J1" H 10268 8067 50  0000 C CNN
-F 1 "Conn_01x05" H 10268 8066 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10350 8400 50  0001 C CNN
-F 3 "~" H 10350 8400 50  0001 C CNN
-	1    10350 8400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	10850 8350 10850 8500
 Wire Wire Line
@@ -2739,17 +2005,6 @@ Wire Wire Line
 	10850 9550 11450 9550
 Wire Wire Line
 	11050 9650 11050 9500
-$Comp
-L Memory_Flash:SST39SF010 U3
-U 1 1 62897764
-P 6000 3600
-F 0 "U3" H 6450 5050 50  0000 C CNN
-F 1 "SST39SF010" H 6450 4950 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 6000 3900 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 6000 3900 50  0001 C CNN
-	1    6000 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5400 4000 5200 4000
 Wire Wire Line
@@ -2854,18 +2109,6 @@ Wire Wire Line
 Wire Wire Line
 	8100 6400 8450 6400
 $Comp
-L Device:R_Network08 RN2
-U 1 1 61079B79
-P 10850 6400
-F 0 "RN2" V 10233 6400 50  0000 C CNN
-F 1 "10K" V 10324 6400 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 11325 6400 50  0001 C CNN
-F 3 "" H 10850 6400 50  0001 C CNN
-F 4 "4609X-101-103LF-ND‎" H 10850 6400 50  0001 C CNN "Digi-Key_PN"
-	1    10850 6400
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+5V #PWR0127
 U 1 1 610ADF01
 P 11150 6000
@@ -2910,26 +2153,6 @@ Text Label 10450 6300 0    50   ~ 0
 D6
 Text Label 10450 7750 0    50   ~ 0
 D7
-$Comp
-L dk_Tactile-Switches:1825910-6 S1
-U 1 1 61706891
-P 10350 2800
-F 0 "S1" H 10350 3147 60  0000 C CNN
-F 1 "1825910-6" H 10350 3041 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 10550 3000 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 10550 3100 60  0001 L CNN
-F 4 "450-1650-ND" H 10550 3200 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 10550 3300 60  0001 L CNN "MPN"
-F 6 "Switches" H 10550 3400 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 10550 3500 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 10550 3600 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 10550 3700 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 10550 3800 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 10550 3900 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 10550 4000 60  0001 L CNN "Status"
-	1    10350 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10550 2900 10600 2900
 $Comp
@@ -2941,18 +2164,6 @@ F 1 "GND" H 10405 2927 50  0000 C CNN
 F 2 "" H 10400 3100 50  0001 C CNN
 F 3 "" H 10400 3100 50  0001 C CNN
 	1    10400 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C20
-U 1 1 6173AF60
-P 10100 3000
-F 0 "C20" H 10192 3046 50  0000 L CNN
-F 1 ".1" H 10192 2955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 10100 3000 50  0001 C CNN
-F 3 "~" H 10100 3000 50  0001 C CNN
-F 4 "399-9976-ND" H 10100 3000 50  0001 C CNN "Digi-Key_PN"
-	1    10100 3000
 	1    0    0    -1  
 $EndComp
 Connection ~ 10100 2900
@@ -2968,17 +2179,6 @@ Wire Wire Line
 NoConn ~ 10150 2700
 Text Notes 9500 3200 0    118  ~ 24
 Reset
-$Comp
-L Diode:1N914 D3
-U 1 1 616A0563
-P 9750 2650
-F 0 "D3" V 9704 2729 50  0000 L CNN
-F 1 "1N914" V 9795 2729 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 9750 2475 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 9750 2650 50  0001 C CNN
-	1    9750 2650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9750 2800 9750 2900
 Connection ~ 9750 2900
@@ -2997,60 +2197,10 @@ F 3 "" H 9750 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9750 2450 9750 2500
-$Comp
-L 74xx:7400 U11
-U 4 1 61729047
-P 8850 2800
-F 0 "U11" H 8850 2500 50  0000 C CNN
-F 1 "74LS00" H 8850 2600 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8850 2800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn7400" H 8850 2800 50  0001 C CNN
-F 4 "296-1626-ND‎" H 8850 2800 50  0001 C CNN "Digi-Key_PN"
-F 5 "SN74LS00N‎" H 8850 2800 50  0001 C CNN "MPN"
-	4    8850 2800
-	-1   0    0    1   
-$EndComp
 Text Label 7350 2600 0    50   ~ 0
 ~RESET
 Wire Wire Line
 	9150 2900 9250 2900
-$Comp
-L Oscillator:CXO_DIP8 X2
-U 1 1 61461749
-P 11650 2800
-F 0 "X2" H 11900 3150 50  0000 L CNN
-F 1 "‎ECS-2100AX-049‎" H 11850 3050 50  0000 L CNN
-F 2 "Oscillator:Oscillator_DIP-8" H 12100 2450 50  0001 C CNN
-F 3 "" H 11550 2800 50  0001 C CNN
-F 4 "XC1159-ND‎" H 11650 2800 50  0001 C CNN "Digi-Key_PN"
-F 5 "ECS-2100AX-049‎ " H 11650 2800 50  0001 C CNN "MPN"
-	1    11650 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Network08 RN4
-U 1 1 6147EA59
-P 10850 4100
-F 0 "RN4" V 10233 4100 50  0000 C CNN
-F 1 "10K" V 10324 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 11325 4100 50  0001 C CNN
-F 3 "" H 10850 4100 50  0001 C CNN
-F 4 "4609X-101-103LF-ND‎" H 10850 4100 50  0001 C CNN "Digi-Key_PN"
-	1    10850 4100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Network08 RN5
-U 1 1 6147FBB2
-P 10850 5250
-F 0 "RN5" V 10250 5250 50  0000 C CNN
-F 1 "10K" V 10350 5250 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 11325 5250 50  0001 C CNN
-F 3 "" H 10850 5250 50  0001 C CNN
-F 4 "4609X-101-103LF-ND‎" H 10850 5250 50  0001 C CNN "Digi-Key_PN"
-	1    10850 5250
-	0    1    1    0   
-$EndComp
 Text Label 10450 3700 0    50   ~ 0
 A12
 Text Label 10450 3800 0    50   ~ 0
@@ -3195,18 +2345,6 @@ $EndComp
 Wire Wire Line
 	11650 2450 11650 2500
 NoConn ~ 11350 2800
-$Comp
-L Device:C_Small C22
-U 1 1 62D1A0F8
-P 4200 950
-F 0 "C22" H 4292 996 50  0000 L CNN
-F 1 ".1" H 4292 905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4200 950 50  0001 C CNN
-F 3 "~" H 4200 950 50  0001 C CNN
-F 4 "399-9976-ND" H 4200 950 50  0001 C CNN "Digi-Key_PN"
-	1    4200 950 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 850  4500 850 
 Connection ~ 4500 850 
@@ -3218,17 +2356,6 @@ Wire Wire Line
 Wire Wire Line
 	9250 2700 9250 2900
 Connection ~ 9250 2900
-$Comp
-L Device:R R12
-U 1 1 630CC43F
-P 8350 2800
-F 0 "R12" V 8250 2800 50  0000 C CNN
-F 1 "1K" V 8350 2800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8280 2800 50  0001 C CNN
-F 3 "~" H 8350 2800 50  0001 C CNN
-	1    8350 2800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8500 2800 8550 2800
 Wire Wire Line
@@ -3248,17 +2375,6 @@ F 3 "" H 7850 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7850 2600 7700 2600
-$Comp
-L Device:R R11
-U 1 1 6330552A
-P 7700 2400
-F 0 "R11" H 7850 2400 50  0000 C CNN
-F 1 "1K" V 7700 2400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7630 2400 50  0001 C CNN
-F 3 "~" H 7700 2400 50  0001 C CNN
-	1    7700 2400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7700 2550 7700 2600
 Connection ~ 7700 2600
@@ -3461,32 +2577,8 @@ Wire Wire Line
 	7350 6750 7700 6750
 Wire Wire Line
 	7350 6650 7700 6650
-$Comp
-L jb-symbol:Z80_CTC U4
-U 1 1 613037B2
-P 6850 6600
-F 0 "U4" H 7200 7700 50  0000 C CNN
-F 1 "Z80_CTC" H 7250 7600 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 7850 7850 50  0001 C CNN
-F 3 "" H 6850 6600 50  0001 C CNN
-F 4 "" H 6850 6600 50  0001 C CNN "Digi-Key_PN"
-F 5 "Z84C3010PEG‎" H 6850 6600 50  0001 C CNN "MPN"
-	1    6850 6600
-	1    0    0    -1  
-$EndComp
 Text Notes 14350 9250 0    39   ~ 8
 https://github.com/johnwinans/
-$Comp
-L Memory_RAM:AS6C4008-55PCN U2
-U 1 1 622130E6
-P 3750 3600
-F 0 "U2" H 4200 4800 50  0000 C CNN
-F 1 "AS6C4008-55PCN" H 4200 4700 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 3750 3700 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 3750 3700 50  0001 C CNN
-	1    3750 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4250 2700 4600 2700
 Wire Wire Line
@@ -3555,50 +2647,16 @@ Text Label 1900 8750 0    50   ~ 0
 SD5_CLK
 Text Label 1900 8850 0    50   ~ 0
 SD5_SSEL
-$Comp
-L Connector_Generic:Conn_01x07 J10
-U 1 1 6394E1DD
-P 12850 8150
-F 0 "J10" H 12750 8600 50  0000 L CNN
-F 1 "Conn_01x07" H 12768 7716 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 12850 8150 50  0001 C CNN
-F 3 "~" H 12850 8150 50  0001 C CNN
-	1    12850 8150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13150 7950 13400 7950
 Wire Wire Line
 	13150 8100 13150 7950
 Wire Wire Line
 	13150 8400 13950 8400
-$Comp
-L Device:R R7
-U 1 1 611D77CB
-P 13150 8250
-F 0 "R7" V 13050 8250 50  0000 C CNN
-F 1 "10K" V 13150 8250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13080 8250 50  0001 C CNN
-F 3 "~" H 13150 8250 50  0001 C CNN
-	1    13150 8250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	12150 7850 12650 7850
 Wire Wire Line
 	12150 8450 12650 8450
-$Comp
-L Device:C_Small C23
-U 1 1 61278EE6
-P 10800 1200
-F 0 "C23" H 10892 1246 50  0000 L CNN
-F 1 ".1" H 10892 1155 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 10800 1200 50  0001 C CNN
-F 3 "~" H 10800 1200 50  0001 C CNN
-F 4 "399-9976-ND" H 10800 1200 50  0001 C CNN "Digi-Key_PN"
-	1    10800 1200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10800 1100 10800 1050
 Connection ~ 10800 1050
@@ -3609,17 +2667,6 @@ Wire Wire Line
 Connection ~ 10800 1500
 Wire Wire Line
 	10800 1500 11300 1500
-$Comp
-L Device:Q_NPN_EBC Q1
-U 1 1 6137CA3F
-P 7950 2800
-F 0 "Q1" H 8141 2846 50  0000 L CNN
-F 1 "PN2222" H 8141 2755 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 8150 2900 50  0001 C CNN
-F 3 "~" H 7950 2800 50  0001 C CNN
-	1    7950 2800
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2900 4100 3250 4100
 Wire Wire Line
@@ -3628,17 +2675,6 @@ Wire Wire Line
 	2050 3950 2100 3950
 Wire Wire Line
 	2050 3850 2100 3850
-$Comp
-L Connector_Generic:Conn_01x02 J9
-U 1 1 625EA58D
-P 2300 3850
-F 0 "J9" H 2250 3950 50  0000 L CNN
-F 1 "Conn_01x02" H 2218 3616 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2300 3850 50  0001 C CNN
-F 3 "~" H 2300 3850 50  0001 C CNN
-	1    2300 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 3400 2550 3400
 Connection ~ 1400 3750
@@ -3654,36 +2690,10 @@ Wire Wire Line
 	1400 3750 1450 3750
 Wire Wire Line
 	1400 3300 1400 3750
-$Comp
-L 74xx:74LS32 U10
-U 3 1 6171C4C0
-P 1750 3850
-F 0 "U10" H 2000 4100 50  0000 C CNN
-F 1 "74LS32" H 2000 4000 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1750 3850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1750 3850 50  0001 C CNN
-F 4 "296-36151-5-ND‎" H 1750 3850 50  0001 C CNN "Digi-Key_PN"
-F 5 "‎SN74LS32NE4‎" H 1750 3850 50  0001 C CNN "MPN"
-	3    1750 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	750  3500 1450 3500
 Wire Wire Line
 	1400 3300 1450 3300
-$Comp
-L 74xx:74LS32 U10
-U 4 1 6171D893
-P 1750 3400
-F 0 "U10" H 2050 3650 50  0000 C CNN
-F 1 "74LS32" H 2050 3550 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1750 3400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1750 3400 50  0001 C CNN
-F 4 "296-36151-5-ND‎" H 1750 3400 50  0001 C CNN "Digi-Key_PN"
-F 5 "‎SN74LS32NE4‎" H 1750 3400 50  0001 C CNN "MPN"
-	4    1750 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1000 4350 1750 4350
 $Comp
@@ -3700,17 +2710,6 @@ $EndComp
 Wire Wire Line
 	2050 4350 2050 3950
 Connection ~ 2050 4350
-$Comp
-L Device:R R13
-U 1 1 62750E67
-P 1900 4350
-F 0 "R13" V 2000 4350 50  0000 C CNN
-F 1 "10K" V 1900 4350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1830 4350 50  0001 C CNN
-F 3 "~" H 1900 4350 50  0001 C CNN
-	1    1900 4350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2050 4400 3250 4400
 Wire Wire Line
@@ -3732,19 +2731,6 @@ Wire Wire Line
 	14250 2850 14150 2850
 Wire Wire Line
 	14250 2650 14150 2650
-$Comp
-L 74xx:7400 U11
-U 3 1 61726D47
-P 14550 2750
-F 0 "U11" H 14550 2950 50  0000 C CNN
-F 1 "74LS00" H 14550 3050 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 14550 2750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn7400" H 14550 2750 50  0001 C CNN
-F 4 "296-1626-ND‎" H 14550 2750 50  0001 C CNN "Digi-Key_PN"
-F 5 "SN74LS00N‎" H 14550 2750 50  0001 C CNN "MPN"
-	3    14550 2750
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	14850 2750 16400 2750
 $Comp
@@ -3777,4 +2763,1047 @@ Wire Wire Line
 Wire Wire Line
 	10600 2700 10550 2700
 Connection ~ 10600 2900
+$Comp
+L 74xx:7400 U11
+U 1 1 61038EB5
+P 1350 900
+F 0 "U11" H 1350 1225 50  0000 C CNN
+F 1 "74LS00" H 1350 1134 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1350 900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn7400" H 1350 900 50  0001 C CNN
+F 4 "296-1626-ND‎" H 1350 900 50  0001 C CNN "Digi-Key_PN"
+F 5 "SN74LS00N‎" H 1350 900 50  0001 C CNN "MPN"
+	1    1350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U11
+U 2 1 6103B52C
+P 1350 1500
+F 0 "U11" H 1350 1300 50  0000 C CNN
+F 1 "74LS00" H 1350 1200 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1350 1500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn7400" H 1350 1500 50  0001 C CNN
+F 4 "296-1626-ND‎" H 1350 1500 50  0001 C CNN "Digi-Key_PN"
+F 5 "SN74LS00N‎" H 1350 1500 50  0001 C CNN "MPN"
+	2    1350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U10
+U 1 1 6103CA65
+P 2600 1000
+F 0 "U10" H 2600 1325 50  0000 C CNN
+F 1 "74LS32" H 2600 1234 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2600 1000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 2600 1000 50  0001 C CNN
+F 4 "296-36151-5-ND‎" H 2600 1000 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎SN74LS32NE4‎" H 2600 1000 50  0001 C CNN "MPN"
+	1    2600 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U10
+U 2 1 6103D346
+P 2650 1600
+F 0 "U10" H 2650 1925 50  0000 C CNN
+F 1 "74LS32" H 2650 1834 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2650 1600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 2650 1600 50  0001 C CNN
+F 4 "296-36151-5-ND‎" H 2650 1600 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎SN74LS32NE4‎" H 2650 1600 50  0001 C CNN "MPN"
+	2    2650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS138 U9
+U 1 1 61043FF4
+P 1700 6450
+F 0 "U9" H 1950 7050 50  0000 C CNN
+F 1 "74LS138" H 1950 6950 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 1700 6450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 1700 6450 50  0001 C CNN
+F 4 "296-1639-5-ND‎" H 1700 6450 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎SN74LS138N‎" H 1700 6450 50  0001 C CNN "MPN"
+	1    1700 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61056FFD
+P 15850 8400
+F 0 "H1" H 15950 8446 50  0000 L CNN
+F 1 "MountingHole" H 15950 8355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 15850 8400 50  0001 C CNN
+F 3 "~" H 15850 8400 50  0001 C CNN
+	1    15850 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 610582DE
+P 15850 8600
+F 0 "H2" H 15950 8646 50  0000 L CNN
+F 1 "MountingHole" H 15950 8555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 15850 8600 50  0001 C CNN
+F 3 "~" H 15850 8600 50  0001 C CNN
+	1    15850 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 610584D1
+P 15850 8800
+F 0 "H3" H 15950 8846 50  0000 L CNN
+F 1 "MountingHole" H 15950 8755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 15850 8800 50  0001 C CNN
+F 3 "~" H 15850 8800 50  0001 C CNN
+	1    15850 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 6105873A
+P 15850 9000
+F 0 "H4" H 15950 9046 50  0000 L CNN
+F 1 "MountingHole" H 15950 8955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 15850 9000 50  0001 C CNN
+F 3 "~" H 15850 9000 50  0001 C CNN
+	1    15850 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_UART:MAX3232 U12
+U 1 1 6105D6D6
+P 8100 9150
+F 0 "U12" H 8650 10400 50  0000 C CNN
+F 1 "ICL3232CPZ" H 8650 10300 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 8150 8100 50  0001 L CNN
+F 3 "" H 8100 9250 50  0001 C CNN
+F 4 "ICL3232CPZ-ND‎" H 8100 9150 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎ICL3232CPZ‎" H 8100 9150 50  0001 C CNN "MPN"
+	1    8100 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS374 U6
+U 1 1 61078FB4
+P 1350 9150
+F 0 "U6" H 1650 9900 50  0000 C CNN
+F 1 "74LS374" H 1650 9800 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 1350 9150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 1350 9150 50  0001 C CNN
+F 4 "296-1662-5-ND‎" H 1350 9150 50  0001 C CNN "Digi-Key_PN"
+F 5 "SN74LS374N‎ " H 1350 9150 50  0001 C CNN "MPN"
+	1    1350 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS244 U8
+U 1 1 610875D9
+P 4700 6550
+F 0 "U8" H 5000 7350 50  0000 C CNN
+F 1 "74LS244" H 5000 7250 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 4700 6550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 4700 6550 50  0001 C CNN
+F 4 "296-36148-5-ND‎" H 4700 6550 50  0001 C CNN "Digi-Key_PN"
+F 5 "SN74LS244NE4‎ " H 4700 6550 50  0001 C CNN "MPN"
+	1    4700 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 610DF17C
+P 2550 8650
+F 0 "R1" V 2500 8500 50  0000 C CNN
+F 1 "2K7" V 2550 8650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2480 8650 50  0001 C CNN
+F 3 "~" H 2550 8650 50  0001 C CNN
+F 4 "‎CF18JT2K70‎" H 2550 8650 50  0001 C CNN "Description"
+F 5 "CF18JT2K70CT-ND" H 2550 8650 50  0001 C CNN "Digi-Key_PN"
+	1    2550 8650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 610E2DCE
+P 3200 8650
+F 0 "R2" V 3150 8800 50  0000 C CNN
+F 1 "4K7" V 3200 8650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 8650 50  0001 C CNN
+F 3 "~" H 3200 8650 50  0001 C CNN
+F 4 "‎CF18JT4K70‎" H 3200 8650 50  0001 C CNN "Description"
+F 5 "CF18JT2K70CT-ND" H 3200 8650 50  0001 C CNN "Digi-Key_PN"
+	1    3200 8650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 610F2F09
+P 2550 8750
+F 0 "R3" V 2500 8600 50  0000 C CNN
+F 1 "2K7" V 2550 8750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2480 8750 50  0001 C CNN
+F 3 "~" H 2550 8750 50  0001 C CNN
+F 4 "‎CF18JT2K70‎" H 2550 8750 50  0001 C CNN "Description"
+F 5 "CF18JT2K70CT-ND" H 2550 8750 50  0001 C CNN "Digi-Key_PN"
+	1    2550 8750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 610F2F0F
+P 3200 8750
+F 0 "R4" V 3150 8900 50  0000 C CNN
+F 1 "4K7" V 3200 8750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 8750 50  0001 C CNN
+F 3 "~" H 3200 8750 50  0001 C CNN
+F 4 "‎CF18JT4K70‎" H 3200 8750 50  0001 C CNN "Description"
+F 5 "CF18JT2K70CT-ND" H 3200 8750 50  0001 C CNN "Digi-Key_PN"
+	1    3200 8750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 610F341C
+P 2550 8850
+F 0 "R5" V 2500 8700 50  0000 C CNN
+F 1 "2K7" V 2550 8850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2480 8850 50  0001 C CNN
+F 3 "~" H 2550 8850 50  0001 C CNN
+F 4 "‎CF18JT2K70‎" H 2550 8850 50  0001 C CNN "Description"
+F 5 "CF18JT2K70CT-ND" H 2550 8850 50  0001 C CNN "Digi-Key_PN"
+	1    2550 8850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 610F3422
+P 3200 8850
+F 0 "R6" V 3150 9000 50  0000 C CNN
+F 1 "4K7" V 3200 8850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3130 8850 50  0001 C CNN
+F 3 "~" H 3200 8850 50  0001 C CNN
+F 4 "‎CF18JT4K70‎" H 3200 8850 50  0001 C CNN "Description"
+F 5 "CF18JT2K70CT-ND" H 3200 8850 50  0001 C CNN "Digi-Key_PN"
+	1    3200 8850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 6110287F
+P 4500 950
+F 0 "C3" H 4592 996 50  0000 L CNN
+F 1 ".1" H 4592 905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4500 950 50  0001 C CNN
+F 3 "~" H 4500 950 50  0001 C CNN
+F 4 "399-9976-ND" H 4500 950 50  0001 C CNN "Digi-Key_PN"
+	1    4500 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 61103F12
+P 4800 950
+F 0 "C4" H 4892 996 50  0000 L CNN
+F 1 ".1" H 4892 905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4800 950 50  0001 C CNN
+F 3 "~" H 4800 950 50  0001 C CNN
+F 4 "399-9976-ND" H 4800 950 50  0001 C CNN "Digi-Key_PN"
+	1    4800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 611041CB
+P 5100 950
+F 0 "C5" H 5192 996 50  0000 L CNN
+F 1 ".1" H 5192 905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5100 950 50  0001 C CNN
+F 3 "~" H 5100 950 50  0001 C CNN
+F 4 "399-9976-ND" H 5100 950 50  0001 C CNN "Digi-Key_PN"
+	1    5100 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 611044AA
+P 5400 950
+F 0 "C6" H 5492 996 50  0000 L CNN
+F 1 ".1" H 5492 905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5400 950 50  0001 C CNN
+F 3 "~" H 5400 950 50  0001 C CNN
+F 4 "399-9976-ND" H 5400 950 50  0001 C CNN "Digi-Key_PN"
+	1    5400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 611047E5
+P 5700 950
+F 0 "C7" H 5792 996 50  0000 L CNN
+F 1 ".1" H 5792 905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5700 950 50  0001 C CNN
+F 3 "~" H 5700 950 50  0001 C CNN
+F 4 "399-9976-ND" H 5700 950 50  0001 C CNN "Digi-Key_PN"
+	1    5700 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 6110AA48
+P 7000 8400
+F 0 "C2" H 7092 8446 50  0000 L CNN
+F 1 ".1" H 7092 8355 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 7000 8400 50  0001 C CNN
+F 3 "~" H 7000 8400 50  0001 C CNN
+F 4 "399-9976-ND" H 7000 8400 50  0001 C CNN "Digi-Key_PN"
+	1    7000 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 6110CB37
+P 9150 8350
+F 0 "C1" H 9242 8396 50  0000 L CNN
+F 1 ".1" H 9242 8305 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 9150 8350 50  0001 C CNN
+F 3 "~" H 9150 8350 50  0001 C CNN
+F 4 "399-9976-ND" H 9150 8350 50  0001 C CNN "Digi-Key_PN"
+	1    9150 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 61112693
+P 9200 8750
+F 0 "C11" V 9100 8600 50  0000 C CNN
+F 1 ".1" V 9050 8750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 9200 8750 50  0001 C CNN
+F 3 "~" H 9200 8750 50  0001 C CNN
+F 4 "399-9976-ND" H 9200 8750 50  0001 C CNN "Digi-Key_PN"
+	1    9200 8750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 61112BC7
+P 9200 9050
+F 0 "C12" V 9100 8900 50  0000 C CNN
+F 1 ".1" V 9062 9050 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 9200 9050 50  0001 C CNN
+F 3 "~" H 9200 9050 50  0001 C CNN
+F 4 "399-9976-ND" H 9200 9050 50  0001 C CNN "Digi-Key_PN"
+	1    9200 9050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 611338A3
+P 6000 950
+F 0 "C8" H 5800 900 50  0000 L CNN
+F 1 ".1" H 5800 1000 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 6000 950 50  0001 C CNN
+F 3 "~" H 6000 950 50  0001 C CNN
+F 4 "399-9976-ND" H 6000 950 50  0001 C CNN "Digi-Key_PN"
+	1    6000 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 611338AA
+P 6300 950
+F 0 "C9" H 6392 996 50  0000 L CNN
+F 1 ".1" H 6392 905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 6300 950 50  0001 C CNN
+F 3 "~" H 6300 950 50  0001 C CNN
+F 4 "399-9976-ND" H 6300 950 50  0001 C CNN "Digi-Key_PN"
+	1    6300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 611338B1
+P 6600 950
+F 0 "C10" H 6692 996 50  0000 L CNN
+F 1 ".1" H 6692 905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 6600 950 50  0001 C CNN
+F 3 "~" H 6600 950 50  0001 C CNN
+F 4 "399-9976-ND" H 6600 950 50  0001 C CNN "Digi-Key_PN"
+	1    6600 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS374 U7
+U 1 1 61177DD4
+P 4700 9150
+F 0 "U7" H 5000 9950 50  0000 C CNN
+F 1 "74LS374" H 5000 9850 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 4700 9150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 4700 9150 50  0001 C CNN
+F 4 "296-1662-5-ND‎" H 4700 9150 50  0001 C CNN "Digi-Key_PN"
+F 5 "SN74LS374N‎ " H 4700 9150 50  0001 C CNN "MPN"
+	1    4700 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 61181847
+P 4500 1550
+F 0 "C13" H 4592 1596 50  0000 L CNN
+F 1 ".1" H 4592 1505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4500 1550 50  0001 C CNN
+F 3 "~" H 4500 1550 50  0001 C CNN
+F 4 "399-9976-ND" H 4500 1550 50  0001 C CNN "Digi-Key_PN"
+	1    4500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 6118184E
+P 4800 1550
+F 0 "C14" H 4892 1596 50  0000 L CNN
+F 1 ".1" H 4892 1505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4800 1550 50  0001 C CNN
+F 3 "~" H 4800 1550 50  0001 C CNN
+F 4 "399-9976-ND" H 4800 1550 50  0001 C CNN "Digi-Key_PN"
+	1    4800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 61181855
+P 5100 1550
+F 0 "C15" H 5192 1596 50  0000 L CNN
+F 1 ".1" H 5192 1505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5100 1550 50  0001 C CNN
+F 3 "~" H 5100 1550 50  0001 C CNN
+F 4 "399-9976-ND" H 5100 1550 50  0001 C CNN "Digi-Key_PN"
+	1    5100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 6118185C
+P 5400 1550
+F 0 "C16" H 5492 1596 50  0000 L CNN
+F 1 ".1" H 5492 1505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5400 1550 50  0001 C CNN
+F 3 "~" H 5400 1550 50  0001 C CNN
+F 4 "399-9976-ND" H 5400 1550 50  0001 C CNN "Digi-Key_PN"
+	1    5400 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 61181863
+P 13450 8200
+F 0 "C17" H 13250 8250 50  0000 L CNN
+F 1 ".1" H 13300 8150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 13450 8200 50  0001 C CNN
+F 3 "~" H 13450 8200 50  0001 C CNN
+F 4 "399-9976-ND" H 13450 8200 50  0001 C CNN "Digi-Key_PN"
+	1    13450 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C18
+U 1 1 6120A448
+P 11950 1200
+F 0 "C18" H 12041 1246 50  0000 L CNN
+F 1 "10uF" H 12041 1155 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 11950 1200 50  0001 C CNN
+F 3 "~" H 11950 1200 50  0001 C CNN
+	1    11950 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C19
+U 1 1 6120C95E
+P 10350 1200
+F 0 "C19" H 10441 1246 50  0000 L CNN
+F 1 "10uF" H 10441 1155 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 10350 1200 50  0001 C CNN
+F 3 "~" H 10350 1200 50  0001 C CNN
+	1    10350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L jb-symbol:Z80CPU U1
+U 1 1 61522127
+P 9150 5600
+F 0 "U1" H 9500 7200 50  0000 C CNN
+F 1 "Z80CPU" H 9500 7100 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 9150 6000 50  0001 C CNN
+F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 9150 6000 50  0001 C CNN
+F 4 "269-5062-ND‎" H 9150 5600 50  0001 C CNN "Digi-Key_PN"
+F 5 "Z84C0010PEG‎" H 9150 5600 50  0001 C CNN "MPN"
+	1    9150 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D2
+U 1 1 61913AD1
+P 13500 1700
+F 0 "D2" H 13500 1600 50  0000 C CNN
+F 1 "LED_ALT" H 13200 1850 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 13500 1700 50  0001 C CNN
+F 3 "~" H 13500 1700 50  0001 C CNN
+	1    13500 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 61947C39
+P 13100 1700
+F 0 "R8" V 13000 1700 50  0000 C CNN
+F 1 "680" V 13100 1700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13030 1700 50  0001 C CNN
+F 3 "~" H 13100 1700 50  0001 C CNN
+F 4 "‎CF18JT680R‎" H 13100 1700 50  0001 C CNN "Description"
+F 5 "CF18JT680RCT-ND‎" H 13100 1700 50  0001 C CNN "Digi-Key_PN"
+	1    13100 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_ALT D1
+U 1 1 619885AA
+P 13500 1050
+F 0 "D1" H 13500 950 50  0000 C CNN
+F 1 "LED_ALT" H 13493 1175 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 13500 1050 50  0001 C CNN
+F 3 "~" H 13500 1050 50  0001 C CNN
+	1    13500 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 619885B8
+P 13100 1050
+F 0 "R9" V 13000 1050 50  0000 C CNN
+F 1 "680" V 13100 1050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13030 1050 50  0001 C CNN
+F 3 "~" H 13100 1050 50  0001 C CNN
+F 4 "‎CF18JT680R‎" H 13100 1050 50  0001 C CNN "Description"
+F 5 "CF18JT680RCT-ND‎" H 13100 1050 50  0001 C CNN "Digi-Key_PN"
+	1    13100 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Oscillator:CXO_DIP8 X1
+U 1 1 61DBCC1A
+P 13050 2850
+F 0 "X1" H 13300 3200 50  0000 L CNN
+F 1 "‎ECS-2100AX-049‎" H 13250 3100 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-8" H 13500 2500 50  0001 C CNN
+F 3 "" H 12950 2850 50  0001 C CNN
+F 4 "XC1159-ND‎" H 13050 2850 50  0001 C CNN "Digi-Key_PN"
+F 5 "ECS-2100AX-049‎ " H 13050 2850 50  0001 C CNN "MPN"
+	1    13050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x20_Counter_Clockwise J3
+U 1 1 61F13B3D
+P 15550 5900
+F 0 "J3" H 15600 7017 50  0000 C CNN
+F 1 "Conn_02x20_Counter_Clockwise" H 15600 6926 50  0000 C CNN
+F 2 "jb-footprint:PinHeader_2x20_P2.54mm_Vertical_counterclock" H 15550 5900 50  0001 C CNN
+F 3 "~" H 15550 5900 50  0001 C CNN
+	1    15550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_USB-DVI-HDMI-Connectors:0548190519 J6
+U 1 1 611986BF
+P 15300 1300
+F 0 "J6" H 15325 1952 60  0000 C CNN
+F 1 "0548190519" H 15325 1846 60  0000 C CNN
+F 2 "digikey-footprints:USB_Mini_B_Female_548190519" H 15500 1500 60  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/548190519_sd.pdf" H 15500 1600 60  0001 L CNN
+F 4 "A135698-ND" H 15500 1700 60  0001 L CNN "Digi-Key_PN"
+F 5 "0548190519" H 15500 1800 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 15500 1900 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 15500 2000 60  0001 L CNN "Family"
+F 8 "https://www.molex.com/pdm_docs/sd/548190519_sd.pdf" H 15500 2100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/molex/0548190519/WM17115-ND/773802" H 15500 2200 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 MINI B 5P R/A" H 15500 2300 60  0001 L CNN "Description"
+F 11 "Molex" H 15500 2400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15500 2500 60  0001 L CNN "Status"
+	1    15300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network08 RN1
+U 1 1 610D41D2
+P 10850 7550
+F 0 "RN1" V 11375 7550 50  0000 C CNN
+F 1 "10K" V 11284 7550 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 11325 7550 50  0001 C CNN
+F 3 "" H 10850 7550 50  0001 C CNN
+F 4 "4609X-101-103LF-ND‎" H 10850 7550 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎4609X-101-103LF‎" H 10850 7550 50  0001 C CNN "Description"
+	1    10850 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 6127B1D0
+P 5700 1550
+F 0 "C21" H 5792 1596 50  0000 L CNN
+F 1 ".1" H 5792 1505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5700 1550 50  0001 C CNN
+F 3 "~" H 5700 1550 50  0001 C CNN
+F 4 "399-9976-ND" H 5700 1550 50  0001 C CNN "Digi-Key_PN"
+	1    5700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U10
+U 5 1 61CBDDE5
+P 9150 1300
+F 0 "U10" H 9350 1750 50  0000 C CNN
+F 1 "74LS32" H 9350 1650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9150 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9150 1300 50  0001 C CNN
+F 4 "296-36151-5-ND‎" H 9150 1300 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎SN74LS32NE4‎" H 9150 1300 50  0001 C CNN "MPN"
+	5    9150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U11
+U 5 1 61CF1304
+P 8350 1300
+F 0 "U11" H 8550 1750 50  0000 C CNN
+F 1 "74LS00" H 8550 1650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8350 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn7400" H 8350 1300 50  0001 C CNN
+F 4 "296-1626-ND‎" H 8350 1300 50  0001 C CNN "Digi-Key_PN"
+F 5 "SN74LS00N‎" H 8350 1300 50  0001 C CNN "MPN"
+	5    8350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x13_Top_Bottom J7
+U 1 1 614C2C3B
+P 15550 3650
+F 0 "J7" H 15600 4400 50  0000 C CNN
+F 1 "Conn_02x13_Top_Bottom" H 15600 4376 50  0001 C CNN
+F 2 "jb-footprint:PinHeader_2x13_P2.54mm_Top_Bottom" H 15550 3650 50  0001 C CNN
+F 3 "~" H 15550 3650 50  0001 C CNN
+	1    15550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L jb-symbol:Z80-SIO-0 U5
+U 1 1 6225CFF1
+P 12700 5550
+F 0 "U5" H 13250 7150 50  0000 C CNN
+F 1 "Z80-SIO-0" H 13300 7050 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 12700 5550 50  0001 C CNN
+F 3 "" H 12700 5550 50  0001 C CNN
+F 4 "269-5062-ND‎" H 12700 5550 50  0001 C CNN "Digi-Key_PN"
+F 5 "Z84C4010PEG‎" H 12700 5550 50  0001 C CNN "MPN"
+	1    12700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Micro_SD_Card_Det J2
+U 1 1 61047A45
+P 14850 8200
+F 0 "J2" H 14800 9017 50  0000 C CNN
+F 1 "DM3D-SF(41)" H 14800 8926 50  0000 C CNN
+F 2 "Connector_Card:microSD_HC_Hirose_DM3D-SF" H 16900 8900 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 14850 8300 50  0001 C CNN
+F 4 "H126097CT-ND‎" H 14850 8200 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎DM3D-SF(41)‎ " H 14850 8200 50  0001 C CNN "MPN"
+	1    14850 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L jb-symbol:LM1117-3.3 U20
+U 1 1 642BFAB2
+P 11300 1050
+F 0 "U20" H 11300 1292 50  0000 C CNN
+F 1 "LM1117-3.3" H 11300 1201 50  0000 C CNN
+F 2 "digikey-footprints:SOT-223" H 11300 1050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 11300 1050 50  0001 C CNN
+	1    11300 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network08 RN3
+U 1 1 613C16C0
+P 3300 6450
+F 0 "RN3" V 2683 6450 50  0000 C CNN
+F 1 "10K" V 2774 6450 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 3775 6450 50  0001 C CNN
+F 3 "" H 3300 6450 50  0001 C CNN
+F 4 "4609X-101-103LF-ND‎" H 3300 6450 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎4609X-101-103LF‎" H 3300 6450 50  0001 C CNN "Description"
+	1    3300 6450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO?
+U 1 1 611D78B5
+P 16250 9600
+AR Path="/611CFEFE/611D78B5" Ref="LOGO?"  Part="1" 
+AR Path="/611D78B5" Ref="LOGO1"  Part="1" 
+F 0 "LOGO1" H 16250 9875 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 16250 9375 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo_11.4x12mm_SilkScreen" H 16250 9600 50  0001 C CNN
+F 3 "~" H 16250 9600 50  0001 C CNN
+	1    16250 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO?
+U 1 1 61291DA5
+P 16200 7850
+AR Path="/611CFEFE/61291DA5" Ref="LOGO?"  Part="1" 
+AR Path="/61291DA5" Ref="LOGO2"  Part="1" 
+F 0 "LOGO2" H 16200 8125 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 16200 7625 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo_5.7x6mm_SilkScreen" H 16200 7850 50  0001 C CNN
+F 3 "~" H 16200 7850 50  0001 C CNN
+	1    16200 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J4
+U 1 1 6187E4F0
+P 11600 8450
+F 0 "J4" H 11650 8775 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 11650 8776 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 11600 8450 50  0001 C CNN
+F 3 "~" H 11600 8450 50  0001 C CNN
+	1    11600 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J5
+U 1 1 61955E78
+P 11650 9650
+F 0 "J5" H 11700 9975 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 11700 9976 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 11650 9650 50  0001 C CNN
+F 3 "~" H 11650 9650 50  0001 C CNN
+	1    11650 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J8
+U 1 1 622C74B2
+P 10400 9600
+F 0 "J8" H 10318 9267 50  0000 C CNN
+F 1 "Conn_01x05" H 10318 9266 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10400 9600 50  0001 C CNN
+F 3 "~" H 10400 9600 50  0001 C CNN
+	1    10400 9600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 61F7F9D0
+P 10350 8400
+F 0 "J1" H 10268 8067 50  0000 C CNN
+F 1 "Conn_01x05" H 10268 8066 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10350 8400 50  0001 C CNN
+F 3 "~" H 10350 8400 50  0001 C CNN
+	1    10350 8400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Memory_Flash:SST39SF010 U3
+U 1 1 62897764
+P 6000 3600
+F 0 "U3" H 6450 5050 50  0000 C CNN
+F 1 "SST39SF010" H 6450 4950 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 6000 3900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 6000 3900 50  0001 C CNN
+F 4 "‎SST39SF010A-70-4C-PHE" H 6000 3600 50  0001 C CNN "Description"
+F 5 "SST39SF010A-70-4C-PHE-ND‎" H 6000 3600 50  0001 C CNN "Digi-Key_PN"
+	1    6000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network08 RN2
+U 1 1 61079B79
+P 10850 6400
+F 0 "RN2" V 10233 6400 50  0000 C CNN
+F 1 "10K" V 10324 6400 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 11325 6400 50  0001 C CNN
+F 3 "" H 10850 6400 50  0001 C CNN
+F 4 "4609X-101-103LF-ND‎" H 10850 6400 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎4609X-101-103LF‎" H 10850 6400 50  0001 C CNN "Description"
+	1    10850 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Tactile-Switches:1825910-6 S1
+U 1 1 61706891
+P 10350 2800
+F 0 "S1" H 10350 3147 60  0000 C CNN
+F 1 "1825910-6" H 10350 3041 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 10550 3000 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 10550 3100 60  0001 L CNN
+F 4 "450-1650-ND" H 10550 3200 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 10550 3300 60  0001 L CNN "MPN"
+F 6 "Switches" H 10550 3400 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 10550 3500 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 10550 3600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 10550 3700 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 10550 3800 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 10550 3900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10550 4000 60  0001 L CNN "Status"
+	1    10350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 6173AF60
+P 10100 3000
+F 0 "C20" H 10192 3046 50  0000 L CNN
+F 1 ".1" H 10192 2955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 10100 3000 50  0001 C CNN
+F 3 "~" H 10100 3000 50  0001 C CNN
+F 4 "399-9976-ND" H 10100 3000 50  0001 C CNN "Digi-Key_PN"
+	1    10100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N914 D3
+U 1 1 616A0563
+P 9750 2650
+F 0 "D3" V 9704 2729 50  0000 L CNN
+F 1 "1N914" V 9795 2729 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 9750 2475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 9750 2650 50  0001 C CNN
+	1    9750 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:7400 U11
+U 4 1 61729047
+P 8850 2800
+F 0 "U11" H 8850 2500 50  0000 C CNN
+F 1 "74LS00" H 8850 2600 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8850 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn7400" H 8850 2800 50  0001 C CNN
+F 4 "296-1626-ND‎" H 8850 2800 50  0001 C CNN "Digi-Key_PN"
+F 5 "SN74LS00N‎" H 8850 2800 50  0001 C CNN "MPN"
+	4    8850 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Oscillator:CXO_DIP8 X2
+U 1 1 61461749
+P 11650 2800
+F 0 "X2" H 11900 3150 50  0000 L CNN
+F 1 "‎ECS-2100AX-049‎" H 11850 3050 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-8" H 12100 2450 50  0001 C CNN
+F 3 "" H 11550 2800 50  0001 C CNN
+F 4 "XC1159-ND‎" H 11650 2800 50  0001 C CNN "Digi-Key_PN"
+F 5 "ECS-2100AX-049‎ " H 11650 2800 50  0001 C CNN "MPN"
+	1    11650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network08 RN4
+U 1 1 6147EA59
+P 10850 4100
+F 0 "RN4" V 10233 4100 50  0000 C CNN
+F 1 "10K" V 10324 4100 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 11325 4100 50  0001 C CNN
+F 3 "" H 10850 4100 50  0001 C CNN
+F 4 "4609X-101-103LF-ND‎" H 10850 4100 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎4609X-101-103LF‎" H 10850 4100 50  0001 C CNN "Description"
+	1    10850 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Network08 RN5
+U 1 1 6147FBB2
+P 10850 5250
+F 0 "RN5" V 10250 5250 50  0000 C CNN
+F 1 "10K" V 10350 5250 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 11325 5250 50  0001 C CNN
+F 3 "" H 10850 5250 50  0001 C CNN
+F 4 "4609X-101-103LF-ND‎" H 10850 5250 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎4609X-101-103LF‎" H 10850 5250 50  0001 C CNN "Description"
+	1    10850 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 62D1A0F8
+P 4200 950
+F 0 "C22" H 4292 996 50  0000 L CNN
+F 1 ".1" H 4292 905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4200 950 50  0001 C CNN
+F 3 "~" H 4200 950 50  0001 C CNN
+F 4 "399-9976-ND" H 4200 950 50  0001 C CNN "Digi-Key_PN"
+	1    4200 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 630CC43F
+P 8350 2800
+F 0 "R12" V 8250 2800 50  0000 C CNN
+F 1 "1K" V 8350 2800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8280 2800 50  0001 C CNN
+F 3 "~" H 8350 2800 50  0001 C CNN
+F 4 "‎CF18JT1K00‎" H 8350 2800 50  0001 C CNN "Description"
+F 5 "CF18JT1K00CT-ND‎" H 8350 2800 50  0001 C CNN "Digi-Key_PN"
+	1    8350 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 6330552A
+P 7700 2400
+F 0 "R11" H 7850 2400 50  0000 C CNN
+F 1 "1K" V 7700 2400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7630 2400 50  0001 C CNN
+F 3 "~" H 7700 2400 50  0001 C CNN
+F 4 "‎CF18JT1K00‎" H 7700 2400 50  0001 C CNN "Description"
+F 5 "CF18JT1K00CT-ND‎" H 7700 2400 50  0001 C CNN "Digi-Key_PN"
+	1    7700 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L jb-symbol:Z80_CTC U4
+U 1 1 613037B2
+P 6850 6600
+F 0 "U4" H 7200 7700 50  0000 C CNN
+F 1 "Z80_CTC" H 7250 7600 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 7850 7850 50  0001 C CNN
+F 3 "" H 6850 6600 50  0001 C CNN
+F 4 "" H 6850 6600 50  0001 C CNN "Digi-Key_PN"
+F 5 "Z84C3010PEG‎" H 6850 6600 50  0001 C CNN "MPN"
+	1    6850 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_RAM:AS6C4008-55PCN U2
+U 1 1 622130E6
+P 3750 3600
+F 0 "U2" H 4200 4800 50  0000 C CNN
+F 1 "AS6C4008-55PCN" H 4200 4700 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 3750 3700 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 3750 3700 50  0001 C CNN
+F 4 "‎AS6C4008-55PIN‎" H 3750 3600 50  0001 C CNN "Description"
+F 5 "1450-1178-5-ND‎" H 3750 3600 50  0001 C CNN "Digi-Key_PN"
+	1    3750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J10
+U 1 1 6394E1DD
+P 12850 8150
+F 0 "J10" H 12750 8600 50  0000 L CNN
+F 1 "Conn_01x07" H 12768 7716 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 12850 8150 50  0001 C CNN
+F 3 "~" H 12850 8150 50  0001 C CNN
+	1    12850 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 611D77CB
+P 13150 8250
+F 0 "R7" V 13050 8250 50  0000 C CNN
+F 1 "10K" V 13150 8250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 13080 8250 50  0001 C CNN
+F 3 "~" H 13150 8250 50  0001 C CNN
+	1    13150 8250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 61278EE6
+P 10800 1200
+F 0 "C23" H 10892 1246 50  0000 L CNN
+F 1 ".1" H 10892 1155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 10800 1200 50  0001 C CNN
+F 3 "~" H 10800 1200 50  0001 C CNN
+F 4 "399-9976-ND" H 10800 1200 50  0001 C CNN "Digi-Key_PN"
+	1    10800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q1
+U 1 1 6137CA3F
+P 7950 2800
+F 0 "Q1" H 8141 2846 50  0000 L CNN
+F 1 "PN2222" H 8141 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 8150 2900 50  0001 C CNN
+F 3 "~" H 7950 2800 50  0001 C CNN
+	1    7950 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 625EA58D
+P 2300 3850
+F 0 "J9" H 2250 3950 50  0000 L CNN
+F 1 "Conn_01x02" H 2218 3616 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2300 3850 50  0001 C CNN
+F 3 "~" H 2300 3850 50  0001 C CNN
+	1    2300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U10
+U 3 1 6171C4C0
+P 1750 3850
+F 0 "U10" H 2000 4100 50  0000 C CNN
+F 1 "74LS32" H 2000 4000 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1750 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1750 3850 50  0001 C CNN
+F 4 "296-36151-5-ND‎" H 1750 3850 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎SN74LS32NE4‎" H 1750 3850 50  0001 C CNN "MPN"
+	3    1750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U10
+U 4 1 6171D893
+P 1750 3400
+F 0 "U10" H 2050 3650 50  0000 C CNN
+F 1 "74LS32" H 2050 3550 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1750 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1750 3400 50  0001 C CNN
+F 4 "296-36151-5-ND‎" H 1750 3400 50  0001 C CNN "Digi-Key_PN"
+F 5 "‎SN74LS32NE4‎" H 1750 3400 50  0001 C CNN "MPN"
+	4    1750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 62750E67
+P 1900 4350
+F 0 "R13" V 2000 4350 50  0000 C CNN
+F 1 "10K" V 1900 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1830 4350 50  0001 C CNN
+F 3 "~" H 1900 4350 50  0001 C CNN
+	1    1900 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:7400 U11
+U 3 1 61726D47
+P 14550 2750
+F 0 "U11" H 14550 2950 50  0000 C CNN
+F 1 "74LS00" H 14550 3050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 14550 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn7400" H 14550 2750 50  0001 C CNN
+F 4 "296-1626-ND‎" H 14550 2750 50  0001 C CNN "Digi-Key_PN"
+F 5 "SN74LS00N‎" H 14550 2750 50  0001 C CNN "MPN"
+	3    14550 2750
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
