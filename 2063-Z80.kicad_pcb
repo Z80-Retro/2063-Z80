@@ -5190,7 +5190,7 @@
     )
   )
 
-  (gr_text '32 (at 118.872 119.888 270) (layer F.SilkS) (tstamp 6136CDFD)
+  (gr_text '32 (at 118.745 119.888 270) (layer F.SilkS) (tstamp 6136CDFD)
     (effects (font (size 1.016 1.016) (thickness 0.2286)))
   )
   (gr_text Z80-RETRO! (at 184.3024 51.2826) (layer B.SilkS) (tstamp 6138175D)
