@@ -1797,8 +1797,6 @@ Text Label 11550 5450 0    50   ~ 0
 Wire Wire Line
 	11550 6350 11900 6350
 Wire Wire Line
-	11550 6250 11900 6250
-Wire Wire Line
 	11550 6150 11900 6150
 Wire Wire Line
 	11550 5900 11900 5900
@@ -2427,19 +2425,6 @@ Text Label 7700 6300 2    50   ~ 0
 A1
 Text Label 7700 6400 2    50   ~ 0
 A0
-$Comp
-L power:+5V #PWR0143
-U 1 1 62D73A3F
-P 5900 7050
-F 0 "#PWR0143" H 5900 6900 50  0001 C CNN
-F 1 "+5V" H 5915 7223 50  0000 C CNN
-F 2 "" H 5900 7050 50  0001 C CNN
-F 3 "" H 5900 7050 50  0001 C CNN
-	1    5900 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 7050 5900 7050
 Text Label 6000 7150 0    50   ~ 0
 CTC_IEO
 Wire Wire Line
@@ -4003,4 +3988,58 @@ F 4 "399-9976-ND" H 11200 1050 50  0001 C CNN "Digi-Key_PN"
 $EndComp
 Text Notes 7250 3050 0    50   ~ 0
 or ‎BC548CTA‎
+$Comp
+L Device:R R10
+U 1 1 614B473D
+P 11350 6100
+F 0 "R10" V 11450 6100 50  0000 C CNN
+F 1 "10K" V 11350 6100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 11280 6100 50  0001 C CNN
+F 3 "~" H 11350 6100 50  0001 C CNN
+	1    11350 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11350 6250 11900 6250
+Wire Wire Line
+	11350 5950 11350 5900
+$Comp
+L power:+5V #PWR014
+U 1 1 615C4A3C
+P 11350 5900
+F 0 "#PWR014" H 11350 5750 50  0001 C CNN
+F 1 "+5V" H 11365 6073 50  0000 C CNN
+F 2 "" H 11350 5900 50  0001 C CNN
+F 3 "" H 11350 5900 50  0001 C CNN
+	1    11350 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 615CB44E
+P 5800 6900
+F 0 "R13" V 5700 6900 50  0000 C CNN
+F 1 "10K" V 5800 6900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5730 6900 50  0001 C CNN
+F 3 "~" H 5800 6900 50  0001 C CNN
+	1    5800 6900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 6750 5800 6700
+$Comp
+L power:+5V #PWR015
+U 1 1 615CB455
+P 5800 6700
+F 0 "#PWR015" H 5800 6550 50  0001 C CNN
+F 1 "+5V" H 5815 6873 50  0000 C CNN
+F 2 "" H 5800 6700 50  0001 C CNN
+F 3 "" H 5800 6700 50  0001 C CNN
+	1    5800 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 7050 6350 7050
+Text Notes 11400 5650 1    39   ~ 0
+Populate R10 when the CTC is not present. \nElse optional.
 $EndSCHEMATC
