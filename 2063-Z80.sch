@@ -1760,7 +1760,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 6650 4200 6650
 Wire Wire Line
-	3500 6550 4200 6550
+	3500 6550 3650 6550
 Wire Wire Line
 	3500 6450 4200 6450
 Wire Wire Line
@@ -4042,4 +4042,37 @@ Wire Wire Line
 	5800 7050 6350 7050
 Text Notes 11400 5650 1    39   ~ 0
 Populate R10 when the CTC is not present. \nElse optional.
+Text Label 3700 6550 0    50   ~ 0
+USER1
+Wire Wire Line
+	3650 6550 3650 5500
+Connection ~ 3650 6550
+Wire Wire Line
+	3650 6550 4200 6550
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 6157539A
+P 3650 5300
+F 0 "J9" V 3568 5112 50  0000 R CNN
+F 1 "Conn_01x02" V 3523 5112 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3650 5300 50  0001 C CNN
+F 3 "~" H 3650 5300 50  0001 C CNN
+	1    3650 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 61603B1F
+P 3750 5550
+F 0 "#PWR018" H 3750 5300 50  0001 C CNN
+F 1 "GND" H 3755 5377 50  0000 C CNN
+F 2 "" H 3750 5550 50  0001 C CNN
+F 3 "" H 3750 5550 50  0001 C CNN
+	1    3750 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5550 3750 5500
+Text Notes 3500 5200 0    50   ~ 0
+User Input
 $EndSCHEMATC
