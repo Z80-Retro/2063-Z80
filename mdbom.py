@@ -5,13 +5,13 @@
 #
 """
     @package
-    Generate a HTML BOM list.
+    Generate a .md BOM list.
     Components are sorted by ref and grouped by value
     Fields are (if exist)
-    Ref, Quantity, Value, Part, Datasheet, Description, Vendor
+    Ref, Quantity, Value, Datasheet, Description
 
     Command line:
-    python "pathToFile/bom_html_grouped_by_value.py" "%I" "%O.html"
+    python "pathToFile/md_bom.py" "%I" "%O.md"
 """
 
 from __future__ import print_function
@@ -23,19 +23,18 @@ sys.path.append("/usr/share/kicad/plugins/")
 import kicad_netlist_reader
 #import sys
 
-# Start with a basic html template
+# Start with a basic template
 html = """
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    </head>
-    <body>
-    <h1><!--SOURCE--></h1>
-    <p><!--DATE--></p>
-    <p><!--TOOL--></p>
-    <p><!--COMPCOUNT--></p>
+<!--SOURCE-->
+
+<!--DATE-->
+
+<!--TOOL-->
+
+<!--COMPCOUNT-->
+
+
+<!--TABLEROW-->
     <table>
     <!--TABLEROW-->
     </table>
@@ -65,13 +64,23 @@ html = html.replace('<!--TOOL-->', net.getTool())
 html = html.replace('<!--COMPCOUNT-->', "<b>Component Count:</b>" + \
     str(len(components)))
 
-row = "<tr><th style='width:640px'>Ref</th>"
-row += "<th>Qty</th>"
-row += "<th>Value</th>" 
-row += "<th>Digikey</th>" 
-row += "<th>Datasheet</th>"
-row += "<th>Description</th></tr>"
+row = "Ref"
+row += " | Qty"
+row += " | Value" 
+row += " | Digikey" 
+row += " | Datasheet"
+row += " | Description"
+row += "\n"
 
+html = html.replace('<!--TABLEROW-->', row + "<!--TABLEROW-->")
+
+row = "_______"
+row += "|_______"
+row += "|_______"
+row += "|_______"
+row += "|_______"
+row += "|_______"
+row += "\n"
 html = html.replace('<!--TABLEROW-->', row + "<!--TABLEROW-->")
 
 # Get all of the components in groups of matching parts + values
@@ -90,14 +99,13 @@ for group in grouped:
         refs += component.getRef()
         c = component
 
-    row = "<tr><td>" + refs +"</td><td>" + str(len(group))
-    row += "</td><td>" + c.getValue()
-    #row += "</td><td>" + c.getLibName() + ":" + c.getPartName()
-    row += "</td><td>" + c.getField("Digi-Key_PN")
-    row += "</td><td><a href='" + c.getDatasheet() + "'>datasheet</a>"
-    row += "</td><td>" + c.getDescription()
-    #row += "</td><td>" + c.getField("Vendor")+ "</td></tr>"
-    row += "</td></tr>"
+    row = "" + refs
+    row += " | " + str(len(group))
+    row += " | " + c.getValue()
+    row += " | " + c.getField("Digi-Key_PN")
+    row += " | " + c.getDatasheet()
+    row += " | " + c.getDescription()
+    row += "\n"
 
     html = html.replace('<!--TABLEROW-->', row + "<!--TABLEROW-->")
 
