@@ -62,7 +62,7 @@ row = "Ref | Qty | Value | Digikey | Datasheet | Description\n"
 html = html.replace('<!--TABLEROW-->', row + "<!--TABLEROW-->")
 
 import re
-row = re.sub('[^| \n]', '_', row)
+row = re.sub('[^|\n]', '-', row)
 html = html.replace('<!--TABLEROW-->', row + "<!--TABLEROW-->")
 
 # Get all of the components in groups of matching parts + values
