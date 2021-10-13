@@ -3266,7 +3266,7 @@ L Connector_Generic:Conn_02x20_Counter_Clockwise J3
 U 1 1 61F13B3D
 P 15550 5900
 F 0 "J3" H 15600 6950 50  0000 C CNN
-F 1 "Conn_02x20_Counter_Clockwise" H 15600 6926 50  0001 C CNN
+F 1 "Conn_02x20" H 15600 6926 50  0001 C CNN
 F 2 "jb-footprint:PinHeader_2x20_P2.54mm_Vertical_counterclock" H 15550 5900 50  0001 C CNN
 F 3 "https://drawings-pdf.s3.amazonaws.com/11636.pdf" H 15550 5900 50  0001 C CNN
 F 4 "PRPC020DAAN-RC" H 15550 5900 50  0001 C CNN "Description"
@@ -3346,7 +3346,7 @@ L Connector_Generic:Conn_02x13_Top_Bottom J7
 U 1 1 614C2C3B
 P 15550 3650
 F 0 "J7" H 15600 4400 50  0000 C CNN
-F 1 "Conn_02x13_Top_Bottom" H 15600 4376 50  0001 C CNN
+F 1 "Conn_02x13" H 15600 4376 50  0001 C CNN
 F 2 "jb-footprint:PinHeader_2x13_P2.54mm_Top_Bottom" H 15550 3650 50  0001 C CNN
 F 3 "https://drawings-pdf.s3.amazonaws.com/11636.pdf" H 15550 3650 50  0001 C CNN
 F 4 "CONN HEADER VERT 26POS 2.54MM" H 15550 3650 50  0001 C CNN "Description"
@@ -3423,7 +3423,7 @@ P 16250 9600
 AR Path="/611CFEFE/611D78B5" Ref="LOGO?"  Part="1" 
 AR Path="/611D78B5" Ref="LOGO1"  Part="1" 
 F 0 "LOGO1" H 16250 9875 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 16250 9375 50  0001 C CNN
+F 1 "OSHW_Logo" H 16250 9375 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo_11.4x12mm_SilkScreen" H 16250 9600 50  0001 C CNN
 F 3 "" H 16250 9600 50  0001 C CNN
 	1    16250 9600
@@ -3436,7 +3436,7 @@ P 16200 7850
 AR Path="/611CFEFE/61291DA5" Ref="LOGO?"  Part="1" 
 AR Path="/61291DA5" Ref="LOGO2"  Part="1" 
 F 0 "LOGO2" H 16200 8125 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 16200 7625 50  0001 C CNN
+F 1 "OSHW_Logo" H 16200 7625 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo_5.7x6mm_SilkScreen" H 16200 7850 50  0001 C CNN
 F 3 "" H 16200 7850 50  0001 C CNN
 	1    16200 7850
@@ -3447,7 +3447,7 @@ L Connector_Generic:Conn_02x05_Odd_Even J4
 U 1 1 6187E4F0
 P 11600 8450
 F 0 "J4" H 11650 8775 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 11650 8776 50  0001 C CNN
+F 1 "Conn_02x05" H 11650 8776 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 11600 8450 50  0001 C CNN
 F 3 "" H 11600 8450 50  0001 C CNN
 F 4 "CONN HEADER VERT 10POS 2.54MM" H 11600 8450 50  0001 C CNN "Description"
@@ -3462,7 +3462,7 @@ L Connector_Generic:Conn_02x05_Odd_Even J5
 U 1 1 61955E78
 P 11650 9650
 F 0 "J5" H 11700 9975 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 11700 9976 50  0001 C CNN
+F 1 "Conn_02x05" H 11700 9976 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 11650 9650 50  0001 C CNN
 F 3 "" H 11650 9650 50  0001 C CNN
 F 4 "CONN HEADER VERT 10POS 2.54MM" H 11650 9650 50  0001 C CNN "Description"
@@ -3797,7 +3797,7 @@ L Connector_Generic:Conn_02x03_Odd_Even J11
 U 1 1 6162E995
 P 11800 3150
 F 0 "J11" H 11850 3350 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 11850 3376 50  0001 C CNN
+F 1 "Conn_02x03" H 11850 3376 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 11800 3150 50  0001 C CNN
 F 3 "https://app.adam-tech.com/products/download/data_sheet/202065/ph2-xx-ua-data-sheet.pdf" H 11800 3150 50  0001 C CNN
 F 4 "CONN HEADER VERT 6POS 2.54MM" H 11800 3150 50  0001 C CNN "Description"

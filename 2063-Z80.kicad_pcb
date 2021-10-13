@@ -1020,7 +1020,7 @@
     (fp_text reference J11 (at 4.6355 -2.2479 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_02x03_Odd_Even (at 1.27 7.41 90) (layer F.Fab)
+    (fp_text value Conn_02x03 (at 1.27 7.41 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 -1.27) (end 3.81 -1.27) (layer F.Fab) (width 0.1))
@@ -2386,7 +2386,7 @@
     (fp_text reference J5 (at 1.27 12.446 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_02x05_Odd_Even (at 1.27 12.49 90) (layer F.Fab)
+    (fp_text value Conn_02x05 (at 1.27 12.49 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 -1.27) (end 3.81 -1.27) (layer F.Fab) (width 0.1))
@@ -2444,7 +2444,7 @@
     (fp_text reference J4 (at 1.27 12.446 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_02x05_Odd_Even (at 1.27 12.49 90) (layer F.Fab)
+    (fp_text value Conn_02x05 (at 1.27 12.49 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 -1.27) (end 3.81 -1.27) (layer F.Fab) (width 0.1))
@@ -2503,7 +2503,7 @@
     (fp_text reference LOGO2 (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Logo_Open_Hardware_Small (at 0.75 0) (layer F.Fab) hide
+    (fp_text value OSHW_Logo (at 0.75 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_poly (pts (xy -1.908759 1.469184) (xy -1.882247 1.482282) (xy -1.849553 1.505106) (xy -1.825725 1.529996)
@@ -2856,7 +2856,7 @@
     (fp_text reference LOGO1 (at 0 0 90) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value Logo_Open_Hardware_Small (at 0.75 0 90) (layer B.Fab) hide
+    (fp_text value OSHW_Logo (at 0.75 0 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_poly (pts (xy -3.780091 -2.90956) (xy -3.727588 -2.935499) (xy -3.662842 -2.9807) (xy -3.615653 -3.029991)
@@ -3610,7 +3610,7 @@
     (fp_text reference J7 (at 1.27 -2.286 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_02x13_Top_Bottom (at 1.27 32.81 90) (layer F.Fab)
+    (fp_text value Conn_02x13 (at 1.27 32.81 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 -1.27) (end 3.81 -1.27) (layer F.Fab) (width 0.1))
@@ -3798,7 +3798,7 @@
     (fp_text reference J3 (at 1.2446 50.3174) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_02x20_Counter_Clockwise (at 1.143 31.877 90) (layer F.Fab)
+    (fp_text value Conn_02x20 (at 1.143 31.877 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 -1.27) (end 3.81 -1.27) (layer F.Fab) (width 0.1))
