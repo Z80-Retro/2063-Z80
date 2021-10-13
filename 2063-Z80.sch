@@ -3193,7 +3193,7 @@ P 9150 5600
 F 0 "U1" H 9500 7200 50  0000 C CNN
 F 1 "Z80-CPU" H 9500 7100 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 9150 6000 50  0001 C CNN
-F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 9150 6000 50  0001 C CNN
+F 3 "https://www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 9150 6000 50  0001 C CNN
 F 4 "269-3898-ND" H 9150 5600 50  0001 C CNN "Digi-Key_PN"
 F 5 "Z84C0010PEG‎" H 9150 5600 50  0001 C CNN "MPN"
 F 6 "IC MPU Z80 10MHZ 40DIP" H 9150 5600 50  0001 C CNN "Description"
