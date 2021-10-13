@@ -25,21 +25,15 @@ import kicad_netlist_reader
 
 # Start with a basic template
 html = """
-<!--SOURCE-->
+# <!--SOURCE-->
 
-<!--DATE-->
+## <!--DATE-->
 
-<!--TOOL-->
+## <!--TOOL-->
 
-<!--COMPCOUNT-->
-
+## <!--COMPCOUNT-->
 
 <!--TABLEROW-->
-    <table>
-    <!--TABLEROW-->
-    </table>
-    </body>
-</html>
     """
 
 # Generate an instance of a generic netlist, and load the netlist tree from
@@ -61,26 +55,15 @@ components = net.getInterestingComponents()
 html = html.replace('<!--SOURCE-->', os.path.basename(net.getSource()))
 html = html.replace('<!--DATE-->', net.getDate())
 html = html.replace('<!--TOOL-->', net.getTool())
-html = html.replace('<!--COMPCOUNT-->', "<b>Component Count:</b>" + \
+html = html.replace('<!--COMPCOUNT-->', "Component Count:" + \
     str(len(components)))
 
-row = "Ref"
-row += " | Qty"
-row += " | Value" 
-row += " | Digikey" 
-row += " | Datasheet"
-row += " | Description"
-row += "\n"
-
+row = "Ref | Qty | Value | Digikey | Datasheet | Description\n"
 html = html.replace('<!--TABLEROW-->', row + "<!--TABLEROW-->")
 
-row = "_______"
-row += "|_______"
-row += "|_______"
-row += "|_______"
-row += "|_______"
-row += "|_______"
-row += "\n"
+import re
+row = re.sub('[^|\n]', '_', row)
+#row = "____|_____|_______|_________|___________|____________\n"
 html = html.replace('<!--TABLEROW-->', row + "<!--TABLEROW-->")
 
 # Get all of the components in groups of matching parts + values
@@ -108,6 +91,8 @@ for group in grouped:
     row += "\n"
 
     html = html.replace('<!--TABLEROW-->', row + "<!--TABLEROW-->")
+
+html = html.replace('<!--TABLEROW-->', '')
 
 # Print the formatted html to the file
 print(html, file=f)
