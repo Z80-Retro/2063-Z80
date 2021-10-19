@@ -15,7 +15,7 @@ Be honest with yourself before sinking more money into sockets than the cost of 
 that go into them.  I expect the cheap ones to last for at least a decade or two.  Cheap
 sockets in my hobby projects from 30 years ago are still doing fine.
 
-Gold plating is better than tin.  Machined pins (see the oscillator sockets) are better then
+Gold plating is better than tin.  Machined pins (see the oscillator sockets) are better than
 stamped spring-metal pins. 
 
 
