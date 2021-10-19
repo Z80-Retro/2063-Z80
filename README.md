@@ -5,6 +5,7 @@ This project was designed to run CP/M 2.2 from an SD card.  It should be an atta
 * A youtube playlist discussing this project and how to build your own can be found in [John's Basement](https://www.youtube.com/watch?v=oekucjDcNbA&list=PL3by7evD3F51Cf9QnsAEdgSQ4cz7HQZX5)
 * A PDF version of the schematic can be found [here](2063-Z80.pdf).
 * Here is the as-built [BOM](2063-Z80.md) with links to the datasheets for all the parts.
+* Here is another [BOM](2063-Z80-sockets.md) with links to sockets for the chips.
 * The software for this project will be added as it evolves.
 
 ![PC Board Image](2063-Z80.jpg "Retro Z80 CPU Board Rev 2")
