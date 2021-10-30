@@ -9,6 +9,8 @@ The companion bare PCB should cost about $2 more if it is ordered at the same ti
 * A PDF version of the schematic can be found [here](2063-Z80.pdf).
 * Here is the as-built [BOM](2063-Z80.md) with links to the datasheets for all the parts.
 * Here is another [BOM](2063-Z80-sockets.md) with links to sockets for the chips.
-* The software for this project will be added as it evolves.
+* To configure a new PI for use with this programmer board as well as to develop Z80 code 
+for the Z80 Retro board, see this [PI Setup Guide](https://github.com/johnwinans/raspberry-pi-install)
+* More software for this project will be added as it evolves.
 
 ![PC Board Image](2063-Z80.jpg "Retro Z80 CPU Board Rev 2")
