@@ -70,7 +70,7 @@ loop:
 ; Waste some time & return 
 ;##############################################################################
 delay:
-	ld		hl,0x0000
+	ld		hl,0x8000
 dloop:
 	dec		hl
 	ld		a,h
