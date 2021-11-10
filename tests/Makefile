@@ -1,4 +1,4 @@
-all: blinky1.bin blinky2.bin blinky3.bin
+all: blinky1.bin blinky2.bin blinky3.bin sio.bin
 
 clean:
 	rm -f ldr
