@@ -86,7 +86,7 @@ loop:
 ; Waste some time & return 
 ;##############################################################################
 delay:
-	ld		hl,0x4000			; blonk faster so printer counter doesn't take so long
+	ld		hl,0x4000			; blink faster so printer counter doesn't take so long
 dloop:
 	dec		hl
 	ld		a,h
