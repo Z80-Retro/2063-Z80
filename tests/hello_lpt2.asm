@@ -19,7 +19,7 @@
 ;
 ;****************************************************************************
 
-; A wrapper that can be used to test the SIO
+; Write gaudy banners to the printer in a loop. 
 
 include 'io.asm'
 

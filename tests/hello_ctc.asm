@@ -19,7 +19,8 @@
 ;
 ;****************************************************************************
 
-; Test proggie for the CTC w/support for the SIO 
+; Test proggie for the CTC w/support for the SIO.
+; CTC runs with IRQs to implement an uptime timer.
 
 include 'io.asm'
 
@@ -51,8 +52,8 @@ stacktop:	equ	0	; end of RAM + 1
 
 	; set mode 2 interrupts & load the vector table address into I
 	im		2
-	ld		a,vectab/256
-	ld		i,a
+	ld		a,vectab/256	; A = MSB of the vectab address
+	ld		i,a	
 
 	call	init_ctc_irq
 	call	init_ctc_3

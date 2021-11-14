@@ -19,6 +19,9 @@
 ;
 ;****************************************************************************
 
+; Blink the SD card select LED and count on the printer data bits.
+
+
 include	'io.asm'
 
 stacktop:	equ	0	; end of RAM + 1
@@ -59,7 +62,7 @@ stacktop:	equ	0	; end of RAM + 1
 
 loop:
 	ld		a,gpio_out_sd_mosi
-	out		(gpio_out),a			; turn the LED on
+	out		(gpio_out),a			; turn on the LED & the printer strobe
 
 	; send the counter value to the printer's data port
 	ld		a,b
@@ -69,7 +72,7 @@ loop:
 	call	delay
 
 	ld		a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
-	out		(gpio_out),a			; turn the LED off
+	out		(gpio_out),a			; turn off the LED & the printer strobe
 
 	; count on the printer in double-time
 	ld		a,b

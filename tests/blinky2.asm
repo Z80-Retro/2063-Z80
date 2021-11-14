@@ -19,6 +19,11 @@
 ;
 ;****************************************************************************
 
+; Blink the SD card select LED.
+; This copies itself from the FLASH into the SRAM and then
+; runs from there.
+
+
 include	'io.asm'
 
 stacktop:	equ	0	; end of RAM + 1

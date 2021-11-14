@@ -19,6 +19,9 @@
 ;
 ;****************************************************************************
 
+; Blink the SD card select LED.
+; This runs entirely from the FLASH (does not use SRAM).
+
 include	'io.asm'
 
 	org		0x0000			; Cold reset Z80 entry point.

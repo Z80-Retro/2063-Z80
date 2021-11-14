@@ -19,7 +19,7 @@
 ;
 ;****************************************************************************
 
-; A wrapper that can be used to test the SIO
+; A proggie to test the SIO in polled mode.
 
 include 'io.asm'
 

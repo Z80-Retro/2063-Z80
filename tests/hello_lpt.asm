@@ -19,7 +19,7 @@
 ;
 ;****************************************************************************
 
-; A wrapper that can be used to test the SIO
+; A test proggie that writes a string out the printer port.
 
 include 'io.asm'
 
