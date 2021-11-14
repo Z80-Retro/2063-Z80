@@ -15,3 +15,20 @@ home directory and built it on your PI then you can program these files like thi
 
 	~/2065-Z80-programmer/pi/flash < blinky1.bin
 
+
+* blinky1.asm
+* blinky2.asm
+* blinky3.asm
+* hello_sio1.asm
+* hello_sio2.asm
+* hello_ctc.asm
+* bank_select.asm
+* hello_lpt.asm
+* hello_lpt2.asm
+
+* io.asm
+* sio.asm
+* hexdump.asm
+* ctc.asm
+* lpt.asm
+
