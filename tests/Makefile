@@ -4,6 +4,7 @@ PROGS=\
 	blinky2.bin \
 	blinky3.bin \
 	hello_sio1.bin \
+	hello_sio2.bin \
 	hello_ctc.bin \
 	bank_select.bin \
 	hello_lpt.bin \
