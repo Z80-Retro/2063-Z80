@@ -80,6 +80,10 @@ stacktop:	equ	0	; end of RAM + 1
 	ei
 
 halt_loop:
+if 0
+	ld		b,'z'
+	call	siob_tx_char
+endif
 	halt
 	jp		halt_loop
 
@@ -96,7 +100,7 @@ relay_init:
 	ld  b,relay_init_a_len	; number of bytes to send
 	otir					; write B bytes from (HL) into port in the C reg
 	
-	ld	c,sio_ac
+	ld	c,sio_bc
 	ld  hl,relay_init_b		; point to init string
 	ld  b,relay_init_b_len	; number of bytes to send
 	otir					; write B bytes from (HL) into port in the C reg
@@ -108,7 +112,7 @@ relay_init_b:				; WR2 on channel B only
 	db	vectab_sio-vectab	; offset into vectab for the SIO handlers
 relay_init_a:
 	db	00000001b			; WR0 = select WR1
-	db	00011000b			; WR1 = IRQ on all RX, ignore parity
+	db	00011100b			; WR1 = IRQ on all RX, ignore parity, status affects vector
 
 relay_init_a_len:	equ $-relay_init_a
 relay_init_b_len:	equ $-relay_init_b
