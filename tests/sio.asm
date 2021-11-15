@@ -77,7 +77,7 @@ sio_init:
 ; Initialization string for the Z80 SIO
 ;##############################################################
 sio_init_wr:
-	db		11011000b	; wr0 = reset everything
+	db		00011000b	; wr0 = reset everything
     db		00000100b   ; wr0 = select reg 4
     db		01000100b   ; wr4 = /16 N1 (115200 from 1.8432 MHZ clk)
     db		00000011b   ; wr0 = select reg 3
