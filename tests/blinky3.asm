@@ -22,66 +22,66 @@
 ; Blink the SD card select LED and count on the printer data bits.
 
 
-include	'io.asm'
+include 'io.asm'
 
-stacktop:	equ	0	; end of RAM + 1
+stacktop:   equ 0   ; end of RAM + 1
 
-	org		0x0000			; Cold reset Z80 entry point.
+    org     0x0000          ; Cold reset Z80 entry point.
 
-	;###################################################
-	; NOTE THAT THE SRAM IS NOT READABLE AT THIS POINT
-	;###################################################
+    ;###################################################
+    ; NOTE THAT THE SRAM IS NOT READABLE AT THIS POINT
+    ;###################################################
 
-	; Select SRAM low bank 0, idle the SD card, and idle printer signals
-	ld	a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
-	out	(gpio_out),a
+    ; Select SRAM low bank 0, idle the SD card, and idle printer signals
+    ld  a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
+    out (gpio_out),a
 
-	; Copy the FLASH into the SRAM by reading every byte and 
-	; writing it back into the same address.
-	ld	hl,0
-	ld	de,0
-	ld	bc,_end
-	ldir					; Copy all the code in the FLASH into RAM at same address.
+    ; Copy the FLASH into the SRAM by reading every byte and 
+    ; writing it back into the same address.
+    ld  hl,0
+    ld  de,0
+    ld  bc,_end
+    ldir                    ; Copy all the code in the FLASH into RAM at same address.
 
-	; Disable the FLASH and run from SRAM only from this point on.
-	in	a,(flash_disable)	; Dummy-read this port to disable the FLASH.
+    ; Disable the FLASH and run from SRAM only from this point on.
+    in  a,(flash_disable)   ; Dummy-read this port to disable the FLASH.
 
-	;###################################################
-	; STARTING HERE, WE ARE RUNNING FROM RAM
-	;###################################################
+    ;###################################################
+    ; STARTING HERE, WE ARE RUNNING FROM RAM
+    ;###################################################
 
-	ld		sp,stacktop
+    ld      sp,stacktop
 
-	; Idle the control signals that could matter, select RAM bank 0,
-	; and toggle the SD card select line to flash the LED.
+    ; Idle the control signals that could matter, select RAM bank 0,
+    ; and toggle the SD card select line to flash the LED.
 
-	; Also toggle the printer STROBE to see that it is working.
+    ; Also toggle the printer STROBE to see that it is working.
 
-	; Use B as a counter to see printer data lines changing in a recognizable way.
-	ld		b,0
+    ; Use B as a counter to see printer data lines changing in a recognizable way.
+    ld      b,0
 
 loop:
-	ld		a,gpio_out_sd_mosi
-	out		(gpio_out),a			; turn on the LED & the printer strobe
+    ld      a,gpio_out_sd_mosi
+    out     (gpio_out),a            ; turn on the LED & the printer strobe
 
-	; send the counter value to the printer's data port
-	ld		a,b
-	out		(prn_dat),a
-	inc		b
+    ; send the counter value to the printer's data port
+    ld      a,b
+    out     (prn_dat),a
+    inc     b
 
-	call	delay
+    call    delay
 
-	ld		a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
-	out		(gpio_out),a			; turn off the LED & the printer strobe
+    ld      a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
+    out     (gpio_out),a            ; turn off the LED & the printer strobe
 
-	; count on the printer in double-time
-	ld		a,b
-	out		(prn_dat),a
-	inc		b
+    ; count on the printer in double-time
+    ld      a,b
+    out     (prn_dat),a
+    inc     b
 
-	call	delay
+    call    delay
 
-	jp		loop
+    jp      loop
 
 
 
@@ -89,17 +89,17 @@ loop:
 ; Waste some time & return 
 ;##############################################################################
 delay:
-	ld		hl,0x4000			; blink faster so printer counter doesn't take so long
+    ld      hl,0x4000           ; blink faster so printer counter doesn't take so long
 dloop:
-	dec		hl
-	ld		a,h
-	or		l
-	jp		nz,dloop
-	ret
+    dec     hl
+    ld      a,h
+    or      l
+    jp      nz,dloop
+    ret
 
 
 ;##############################################################################
 ; This marks the end of the data that must be copied from FLASH into RAM
 ;##############################################################################
-_end:		equ	$
+_end:       equ $
 

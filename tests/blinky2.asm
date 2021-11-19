@@ -24,50 +24,50 @@
 ; runs from there.
 
 
-include	'io.asm'
+include 'io.asm'
 
-stacktop:	equ	0	; end of RAM + 1
+stacktop:   equ 0   ; end of RAM + 1
 
-	org		0x0000			; Cold reset Z80 entry point.
+    org     0x0000          ; Cold reset Z80 entry point.
 
-	;###################################################
-	; NOTE THAT THE SRAM IS NOT READABLE AT THIS POINT
-	;###################################################
+    ;###################################################
+    ; NOTE THAT THE SRAM IS NOT READABLE AT THIS POINT
+    ;###################################################
 
-	; Select SRAM low bank 0, idle the SD card, and idle printer signals
-	ld	a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
-	out	(gpio_out),a
+    ; Select SRAM low bank 0, idle the SD card, and idle printer signals
+    ld  a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
+    out (gpio_out),a
 
-	; Copy the FLASH into the SRAM by reading every byte and 
-	; writing it back into the same address.
-	ld	hl,0
-	ld	de,0
-	ld	bc,_end
-	ldir					; Copy all the code in the FLASH into RAM at same address.
+    ; Copy the FLASH into the SRAM by reading every byte and 
+    ; writing it back into the same address.
+    ld  hl,0
+    ld  de,0
+    ld  bc,_end
+    ldir                    ; Copy all the code in the FLASH into RAM at same address.
 
-	; Disable the FLASH and run from SRAM only from this point on.
-	in	a,(flash_disable)	; Dummy-read this port to disable the FLASH.
+    ; Disable the FLASH and run from SRAM only from this point on.
+    in  a,(flash_disable)   ; Dummy-read this port to disable the FLASH.
 
-	;###################################################
-	; STARTING HERE, WE ARE RUNNING FROM RAM
-	;###################################################
+    ;###################################################
+    ; STARTING HERE, WE ARE RUNNING FROM RAM
+    ;###################################################
 
-	ld		sp,stacktop
+    ld      sp,stacktop
 
-	; Idle the control signals that could matter, select RAM bank 0,
-	; and toggle the SD card select line to flash the LED.
+    ; Idle the control signals that could matter, select RAM bank 0,
+    ; and toggle the SD card select line to flash the LED.
 loop:
-	ld		a,gpio_out_sd_mosi|gpio_out_prn_stb
-	out		(gpio_out),a			; turn the LED on
+    ld      a,gpio_out_sd_mosi|gpio_out_prn_stb
+    out     (gpio_out),a            ; turn the LED on
 
-	call	delay
+    call    delay
 
-	ld		a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
-	out		(gpio_out),a			; turn the LED off
+    ld      a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
+    out     (gpio_out),a            ; turn the LED off
 
-	call	delay
+    call    delay
 
-	jp		loop
+    jp      loop
 
 
 
@@ -75,13 +75,13 @@ loop:
 ; Waste some time & return 
 ;##############################################################################
 delay:
-	ld		hl,0x8000
+    ld      hl,0x8000
 dloop:
-	dec		hl
-	ld		a,h
-	or		l
-	jp		nz,dloop
-	ret
+    dec     hl
+    ld      a,h
+    or      l
+    jp      nz,dloop
+    ret
 
 
 
@@ -89,5 +89,5 @@ dloop:
 ;##############################################################################
 ; This marks the end of the data that must be copied from FLASH into RAM
 ;##############################################################################
-_end:		equ	$
+_end:       equ $
 

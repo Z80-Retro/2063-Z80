@@ -23,7 +23,7 @@
 
 include 'io.asm'
 
-stacktop:	equ	0	; end of RAM + 1
+stacktop:   equ 0   ; end of RAM + 1
 
     ;###################################################
     ; NOTE THAT THE SRAM IS NOT READABLE AT THIS POINT
@@ -51,71 +51,71 @@ stacktop:	equ	0	; end of RAM + 1
 
     ; set mode 2 interrupts & load the vector table address into I
     im      2
-    ld      a,vectab/256	; A = MSB of the vectab address
+    ld      a,vectab/256    ; A = MSB of the vectab address
     ld      i,a
 
-	; wipe the stack region to make the subsequent dump easier to see
-	ld		hl,0xff00
-	ld		(hl),0xa5
-	ld		de,0xff01
-	ld		bc,0xff
-	ldir
+    ; wipe the stack region to make the subsequent dump easier to see
+    ld      hl,0xff00
+    ld      (hl),0xa5
+    ld      de,0xff01
+    ld      bc,0xff
+    ldir
 
-	call	sioa_init
-	call	siob_init
+    call    sioa_init
+    call    siob_init
 
-	; dump the RAM copy of the text region 
-	ld		hl,0
-	ld		bc,_end
-	ld		e,1
-	call	hexdump
+    ; dump the RAM copy of the text region 
+    ld      hl,0
+    ld      bc,_end
+    ld      e,1
+    call    hexdump
 
-	; dump the RAM stack region 
-	ld		hl,0xff00
-	ld		bc,0x100
-	ld		e,1
-	call	hexdump
+    ; dump the RAM stack region 
+    ld      hl,0xff00
+    ld      bc,0x100
+    ld      e,1
+    call    hexdump
 
-	call	relay_init
-	ei
+    call    relay_init
+    ei
 
 halt_loop:
 if 0
-	ld		b,'z'
-	call	siob_tx_char
+    ld      b,'z'
+    call    siob_tx_char
 endif
-	halt
-	jp		halt_loop
+    halt
+    jp      halt_loop
 
 
 ;##############################################################
 ; Configure the SIO to generate IRQs when receiving characters.
 ;##############################################################
 relay_init:
-	; Channels A and B are a little different
-	; Not sure if can write to WR2 on both (and let A ignore it)
+    ; Channels A and B are a little different
+    ; Not sure if can write to WR2 on both (and let A ignore it)
 
-	ld	c,sio_ac
-	ld  hl,relay_init_a		; point to init string
-	ld  b,relay_init_a_len	; number of bytes to send
-	otir					; write B bytes from (HL) into port in the C reg
-	
-	ld	c,sio_bc
-	ld  hl,relay_init_b		; point to init string
-	ld  b,relay_init_b_len	; number of bytes to send
-	otir					; write B bytes from (HL) into port in the C reg
+    ld  c,sio_ac
+    ld  hl,relay_init_a     ; point to init string
+    ld  b,relay_init_a_len  ; number of bytes to send
+    otir                    ; write B bytes from (HL) into port in the C reg
+    
+    ld  c,sio_bc
+    ld  hl,relay_init_b     ; point to init string
+    ld  b,relay_init_b_len  ; number of bytes to send
+    otir                    ; write B bytes from (HL) into port in the C reg
 
-	ret
+    ret
 
-relay_init_b:				; WR2 on channel B only
-	db	00000010b			; WR0 = select WR2
-	db	vectab_sio-vectab	; offset into vectab for the SIO handlers
+relay_init_b:               ; WR2 on channel B only
+    db  00000010b           ; WR0 = select WR2
+    db  vectab_sio-vectab   ; offset into vectab for the SIO handlers
 relay_init_a:
-	db	00000001b			; WR0 = select WR1
-	db	00011100b			; WR1 = IRQ on all RX, ignore parity, status affects vector
+    db  00000001b           ; WR0 = select WR1
+    db  00011100b           ; WR1 = IRQ on all RX, ignore parity, status affects vector
 
-relay_init_a_len:	equ $-relay_init_a
-relay_init_b_len:	equ $-relay_init_b
+relay_init_a_len:   equ $-relay_init_a
+relay_init_b_len:   equ $-relay_init_b
 
 
 ;##############################################################
@@ -127,32 +127,32 @@ irq_ext_a:
 irq_ext_b:
 irq_rxs_a:
 irq_rxs_b:
-	ei
-	reti
+    ei
+    reti
 
 ;##############################################################
 ; A char just arrived on port A, forward it to B
 ; Note this ignores potential overflow problems.
 ;##############################################################
 irq_rx_a:
-	push	af
-	in		a,(sio_ad)
-	out		(sio_bd),a
-	pop		af
-	ei
-	reti
+    push    af
+    in      a,(sio_ad)
+    out     (sio_bd),a
+    pop     af
+    ei
+    reti
 
 ;##############################################################
 ; A char just arrived on port B, forward it to A
 ; Note this ignores potential overflow problems.
 ;##############################################################
 irq_rx_b:
-	push	af
-	in		a,(sio_bd)
-	out		(sio_ad),a
-	pop		af
-	ei
-	reti
+    push    af
+    in      a,(sio_bd)
+    out     (sio_ad),a
+    pop     af
+    ei
+    reti
 
 
 
@@ -170,14 +170,14 @@ include 'hexdump.asm'
     ds      0x100-($&0xff)  ; align to a 256-byte boundary
 vectab:
 vectab_sio:     ; vectab_sio-vectab MUST be a multiple of 8 due to SIO requirements
-	dw      irq_tbmt_b
-	dw		irq_ext_b
-	dw		irq_rx_b
-	dw		irq_rxs_b
+    dw      irq_tbmt_b
+    dw      irq_ext_b
+    dw      irq_rx_b
+    dw      irq_rxs_b
 
     dw      irq_tbmt_a
-	dw		irq_ext_a
-	dw		irq_rx_a
-	dw		irq_rxs_a
+    dw      irq_ext_a
+    dw      irq_rx_a
+    dw      irq_rxs_a
 
 _end:

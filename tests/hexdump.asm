@@ -25,60 +25,60 @@
 ; Does not clobber any registers
 ;#############################################################################
 hexdump:
-	push	af
-	push	de
-	push	hl
-	push	bc
-	jp		hexdump0
+    push    af
+    push    de
+    push    hl
+    push    bc
+    jp      hexdump0
 
 hexdump_loop:
-	ld		a,e				; fancy format or continuous?
-	or		a
-	jr		z,hd_not8		; not fancy -> hd_not8
+    ld      a,e             ; fancy format or continuous?
+    or      a
+    jr      z,hd_not8       ; not fancy -> hd_not8
 
-	ld		a,l
-	and		0x0f
-	jr		z,hexdump0n
-	cp		0x08			; put an extra space between positiioons 7 and 8
-	jr		nz,hd_not8
-	ld		b,' '
-	call	sioa_tx_char
+    ld      a,l
+    and     0x0f
+    jr      z,hexdump0n
+    cp      0x08            ; put an extra space between positiioons 7 and 8
+    jr      nz,hd_not8
+    ld      b,' '
+    call    sioa_tx_char
 hd_not8:
-	ld		b,' '
-	call	sioa_tx_char
-	jp		hexdump1
+    ld      b,' '
+    call    sioa_tx_char
+    jp      hexdump1
 
 hexdump0n:
-	call	hexdump_crlf
+    call    hexdump_crlf
 hexdump0:
-	ld		a,h
-	call	hexdump_a
-	ld		a,l
-	call	hexdump_a
-	ld		b,':'
-	call	sioa_tx_char
-	ld		b,' '
-	call	sioa_tx_char
-	
+    ld      a,h
+    call    hexdump_a
+    ld      a,l
+    call    hexdump_a
+    ld      b,':'
+    call    sioa_tx_char
+    ld      b,' '
+    call    sioa_tx_char
+    
 hexdump1:
-	ld		a,(hl)
-	call	hexdump_a
-	inc		hl
+    ld      a,(hl)
+    call    hexdump_a
+    inc     hl
 
-	pop		bc
-	dec		bc
-	push	bc
+    pop     bc
+    dec     bc
+    push    bc
 
-	ld		a,b
-	or		c
-	jr		nz,hexdump_loop
-	call	hexdump_crlf
+    ld      a,b
+    or      c
+    jr      nz,hexdump_loop
+    call    hexdump_crlf
 
-	pop		bc
-	pop		hl
-	pop		de
-	pop		af
-	ret
+    pop     bc
+    pop     hl
+    pop     de
+    pop     af
+    ret
 
 
 ;#############################################################################
@@ -86,30 +86,30 @@ hexdump1:
 ; Clobbers AF, BC
 ;#############################################################################
 hexdump_a:
-	push	af
-	srl		a
-	srl		a
-	srl		a
-	srl		a
-	call	hexdump_nib
-	pop		af
-	and		0x0f
+    push    af
+    srl     a
+    srl     a
+    srl     a
+    srl     a
+    call    hexdump_nib
+    pop     af
+    and     0x0f
 
 hexdump_nib:
-	add		'0'
-	cp		'9'+1
-	jp		m,hexdump_num
-	add		'A'-'9'-1
+    add     '0'
+    cp      '9'+1
+    jp      m,hexdump_num
+    add     'A'-'9'-1
 hexdump_num:
-	ld		b,a
-	jp		sioa_tx_char			; tail
+    ld      b,a
+    jp      sioa_tx_char            ; tail
 
 
 ;#############################################################################
 ; Clobbers AF, BC
 ;#############################################################################
 hexdump_crlf:
-	ld		b,'\r'
-	call	sioa_tx_char			
-	ld		b,'\n'
-	jp		sioa_tx_char			; tail
+    ld      b,'\r'
+    call    sioa_tx_char            
+    ld      b,'\n'
+    jp      sioa_tx_char            ; tail

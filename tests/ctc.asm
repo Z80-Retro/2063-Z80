@@ -27,24 +27,24 @@
 ; C = clock divisor
 ;#############################################################################
 init_ctc_1:
-;	ld		a,0x07		; TC follows, Timer, Control, Reset
-	ld		a,0x47		; TC follows, Counter, Control, Reset
-	out		(ctc_1),a
-	ld		a,c
-	out		(ctc_1),a
-	ret
+;   ld      a,0x07      ; TC follows, Timer, Control, Reset
+    ld      a,0x47      ; TC follows, Counter, Control, Reset
+    out     (ctc_1),a
+    ld      a,c
+    out     (ctc_1),a
+    ret
 
 ;#############################################################################
 ; Init the bit-rate generator for SIO B.
 ; C = clock divisor
 ;#############################################################################
 init_ctc_2:
-;	ld		a,0x07		; TC follows, Timer, Control, Reset
-	ld		a,0x47		; TC follows, Counter, Control, Reset
-	out		(ctc_1),a
-	ld		a,c
-	out		(ctc_1),a
-	ret
+;   ld      a,0x07      ; TC follows, Timer, Control, Reset
+    ld      a,0x47      ; TC follows, Counter, Control, Reset
+    out     (ctc_1),a
+    ld      a,c
+    out     (ctc_1),a
+    ret
 
 ;#############################################################################
 ;#############################################################################
@@ -65,37 +65,37 @@ irq_ctc_2:
 ; timer will not yet have been started.
 ;#############################################################################
 init_ctc_3:
-	ld		a,0xb7		; EI, timer mode, /256 prescale, TC follows, reset, ctl
-	out		(ctc_3),a
-	ld		a,0			; 0=256 (as slow as it can go = system_clock_hz/256/256)
-	out		(ctc_3),a
-	ret
+    ld      a,0xb7      ; EI, timer mode, /256 prescale, TC follows, reset, ctl
+    out     (ctc_3),a
+    ld      a,0         ; 0=256 (as slow as it can go = system_clock_hz/256/256)
+    out     (ctc_3),a
+    ret
 
 ;#############################################################################
 ;#############################################################################
 irq_ctc_3:
-	push	af
-	push	hl
+    push    af
+    push    hl
 
-	ld		hl,(uptime)
-	inc		hl				; increment the LSW of the uptime counter
-	ld		(uptime),hl
-	ld		a,h
-	or		l
-	jp		nz,irq_ctc_3_lo
-	ld		hl,(uptime+2)
-	inc		hl				; increment the MSW of the uptime counter
-	ld		(uptime+2),hl
+    ld      hl,(uptime)
+    inc     hl              ; increment the LSW of the uptime counter
+    ld      (uptime),hl
+    ld      a,h
+    or      l
+    jp      nz,irq_ctc_3_lo
+    ld      hl,(uptime+2)
+    inc     hl              ; increment the MSW of the uptime counter
+    ld      (uptime+2),hl
 
 irq_ctc_3_lo:
-	pop		hl
-	pop		af
+    pop     hl
+    pop     af
     ei
     reti
 
 ; uint32_t uptime = number of seconds that the system has been running
 uptime:
-	dw  0,0
+    dw  0,0
 
 
 
@@ -103,7 +103,7 @@ uptime:
 ;#############################################################################
 ;#############################################################################
 init_ctc_irq:
-	; The channel 0 vector used for all channels!
-	ld		a,vectab_ctc-vectab
-	out		(ctc_0),a 	; set the mode-2 IRQ vector (LSB is zero)
-	ret
+    ; The channel 0 vector used for all channels!
+    ld      a,vectab_ctc-vectab
+    out     (ctc_0),a   ; set the mode-2 IRQ vector (LSB is zero)
+    ret

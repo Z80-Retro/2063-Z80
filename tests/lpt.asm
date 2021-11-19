@@ -23,38 +23,38 @@
 
 ;#############################################################################
 ; BUG: Aughtta tweak the values in the SIO that control INIT & LF signals.
-; 		This will foolishly assume that the 'default' state of them is OK.
+;       This will foolishly assume that the 'default' state of them is OK.
 ; Clobbers AF
 ;#############################################################################
 lpt_init:
     ld      a,(gpio_out_cache)
-	or		gpio_out_prn_stb
-	ld		(gpio_out_cache),a
+    or      gpio_out_prn_stb
+    ld      (gpio_out_cache),a
     out     (gpio_out),a
-	ret
+    ret
 
 ;#############################################################################
 ; Return A=0 if the printer is ready
 ; Clobbers AF
 ;#############################################################################
 lpt_ready:
-	in      a,(gpio_in)
-	and     gpio_in_prn_bsy     ; if this bit is low then it is ready
-	ret
+    in      a,(gpio_in)
+    and     gpio_in_prn_bsy     ; if this bit is low then it is ready
+    ret
 
 ;#############################################################################
 ; Wait for the printer to become ready and send the character in C. 
 ; Clobbers AF
 ;#############################################################################
 lpt_tx:
-	call	lpt_ready
-	jr		nz,lpt_tx
+    call    lpt_ready
+    jr      nz,lpt_tx
 
-	ld		a,c
-	out     (prn_dat),a             ; put the character code into the output latch
+    ld      a,c
+    out     (prn_dat),a             ; put the character code into the output latch
 
-	; assert the strobe signal
-	ld      a,(gpio_out_cache)
+    ; assert the strobe signal
+    ld      a,(gpio_out_cache)
     and     ~gpio_out_prn_stb       ; set the strobe signal low
     out     (gpio_out),a
 

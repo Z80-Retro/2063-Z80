@@ -23,7 +23,7 @@
 
 include 'io.asm'
 
-stacktop:	equ	0	; end of RAM + 1
+stacktop:   equ 0   ; end of RAM + 1
 
     ;###################################################
     ; NOTE THAT THE SRAM IS NOT READABLE AT THIS POINT
@@ -49,36 +49,36 @@ stacktop:	equ	0	; end of RAM + 1
 
     ld      sp,stacktop
 
-	call	sioa_init
-	call	lpt_init
+    call    sioa_init
+    call    lpt_init
 
-	ld		hl,msg
-	ld		bc,msg_len
-	call	print_str
+    ld      hl,msg
+    ld      bc,msg_len
+    call    print_str
 
 halt_loop:
-	halt
-	jp		halt_loop
+    halt
+    jp      halt_loop
 
 msg:
-	db		"Hello from the printer!\r\n"
-	db		"This is a test to make sure that the newline works in a sane manner.\r\n"
+    db      "Hello from the printer!\r\n"
+    db      "This is a test to make sure that the newline works in a sane manner.\r\n"
 msg_len: equ $-msg
 
 ;#############################################################################
 ; Write BC bytes from memory at address in HL
 ;#############################################################################
 print_str:
-	push	bc
-	ld		c,(hl)
-	call	lpt_tx
-	inc		hl
-	pop		bc
-	dec		bc
-	ld		a,b
-	or		c
-	jr		nz,print_str
-	ret
+    push    bc
+    ld      c,(hl)
+    call    lpt_tx
+    inc     hl
+    pop     bc
+    dec     bc
+    ld      a,b
+    or      c
+    jr      nz,print_str
+    ret
 
 
 include 'lpt.asm'
@@ -89,6 +89,6 @@ include 'hexdump.asm'
 ; A copy of the state of the GPIO output port
 ;#############################################################################
 gpio_out_cache:
-	db	gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_sd_clk|gpio_out_prn_stb
+    db  gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_sd_clk|gpio_out_prn_stb
 
 _end:
