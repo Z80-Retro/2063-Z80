@@ -450,7 +450,7 @@ Wire Wire Line
 Text Label 8100 4700 0    50   ~ 0
 CLK
 Wire Wire Line
-	9050 1200 9350 1200
+	9050 1200 9150 1200
 Text Label 9350 1200 2    50   ~ 0
 CLK
 $Comp
@@ -3783,8 +3783,6 @@ Wire Wire Line
 	11250 3050 11600 3050
 Connection ~ 12200 2200
 Wire Wire Line
-	12200 2200 12600 2200
-Wire Wire Line
 	11250 2900 12200 2900
 Wire Wire Line
 	12200 2900 12200 3050
@@ -4323,4 +4321,67 @@ Wire Wire Line
 	5050 3700 5050 4000
 Text Notes 5000 3300 1    39   ~ 0
 Populate J12 for FLASH bank select.\n(Not useful if using 2065-Z80-programmer)\nElse leave unpopulated.
+Wire Wire Line
+	9150 1500 9150 1200
+Connection ~ 9150 1200
+Wire Wire Line
+	9150 1200 9350 1200
+Wire Wire Line
+	9450 1500 9550 1500
+$Comp
+L power:GND #PWR020
+U 1 1 61C29EFA
+P 9550 1500
+F 0 "#PWR020" H 9550 1250 50  0001 C CNN
+F 1 "GND" H 9555 1327 50  0000 C CNN
+F 2 "" H 9550 1500 50  0001 C CNN
+F 3 "" H 9550 1500 50  0001 C CNN
+	1    9550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 61C3AA3E
+P 12850 2200
+F 0 "R16" V 12750 2200 50  0000 C CNN
+F 1 "120" V 12850 2200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 12780 2200 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-cf_cfm.pdf" H 12850 2200 50  0001 C CNN
+F 4 "RES 120 OHM 5% 1/8W AXIAL" H 12850 2200 50  0001 C CNN "Description"
+F 5 "CF18JT120RCT-ND" H 12850 2200 50  0001 C CNN "Digi-Key_PN"
+F 6 "CF18JT120R" H 12850 2200 50  0001 C CNN "MPN"
+F 7 "Stackpole Electronics Inc" H 12850 2200 50  0001 C CNN "Manufacturer"
+	1    12850 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13000 2200 13100 2200
+$Comp
+L power:GND #PWR021
+U 1 1 61C3AA46
+P 13100 2200
+F 0 "#PWR021" H 13100 1950 50  0001 C CNN
+F 1 "GND" H 13105 2027 50  0000 C CNN
+F 2 "" H 13100 2200 50  0001 C CNN
+F 3 "" H 13100 2200 50  0001 C CNN
+	1    13100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12200 2200 12700 2200
+$Comp
+L Device:R R15
+U 1 1 61D53855
+P 9300 1500
+F 0 "R15" V 9200 1500 50  0000 C CNN
+F 1 "120" V 9300 1500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9230 1500 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-cf_cfm.pdf" H 9300 1500 50  0001 C CNN
+F 4 "RES 120 OHM 5% 1/8W AXIAL" H 9300 1500 50  0001 C CNN "Description"
+F 5 "CF18JT120RCT-ND" H 9300 1500 50  0001 C CNN "Digi-Key_PN"
+F 6 "CF18JT120R" H 9300 1500 50  0001 C CNN "MPN"
+F 7 "Stackpole Electronics Inc" H 9300 1500 50  0001 C CNN "Manufacturer"
+	1    9300 1500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
