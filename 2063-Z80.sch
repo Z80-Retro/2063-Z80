@@ -1977,17 +1977,6 @@ Wire Wire Line
 	10850 9550 11450 9550
 Wire Wire Line
 	11050 9650 11050 9500
-Wire Wire Line
-	5400 4000 5200 4000
-Wire Wire Line
-	5200 4000 5200 4100
-Wire Wire Line
-	5400 4100 5200 4100
-Connection ~ 5200 4100
-Wire Wire Line
-	5200 4100 5200 4200
-Wire Wire Line
-	5400 4200 5200 4200
 $Comp
 L power:+5V #PWR0141
 U 1 1 62A3772F
@@ -2012,8 +2001,6 @@ F 3 "" H 6000 4950 50  0001 C CNN
 	1    6000 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 4800 6000 4950
 Text Label 4700 4600 0    50   ~ 0
 ~FLASH_MREQ
 Text Label 4700 4700 0    50   ~ 0
@@ -2069,9 +2056,6 @@ F 3 "" H 4950 4000 50  0001 C CNN
 	1    4950 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 4000 5200 4000
-Connection ~ 5200 4000
 Wire Wire Line
 	8100 6100 8450 6100
 Wire Wire Line
@@ -3502,21 +3486,6 @@ F 7 "Sullins Connector Solutions" H 10350 8400 50  0001 C CNN "Manufacturer"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Memory_Flash:SST39SF010 U3
-U 1 1 62897764
-P 6000 3600
-F 0 "U3" H 6450 5050 50  0000 C CNN
-F 1 "SST39SF010" H 6450 4950 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 6000 3900 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20005022C.pdf" H 6000 3900 50  0001 C CNN
-F 4 "IC FLASH 1MBIT PARALLEL 32DIP" H 6000 3600 50  0001 C CNN "Description"
-F 5 "SST39SF010A-70-4C-PHE-ND‎" H 6000 3600 50  0001 C CNN "Digi-Key_PN"
-F 6 "SST39SF010A-70-4C-PHE" H 6000 3600 50  0001 C CNN "MPN"
-F 7 "Microchip Technology" H 6000 3600 50  0001 C CNN "Manufacturer"
-	1    6000 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Network08 RN2
 U 1 1 61079B79
 P 10850 6900
@@ -4281,4 +4250,25 @@ Wire Wire Line
 	13500 6550 14150 6550
 Text Label 13850 6550 2    50   ~ 0
 ~DTRB
+Wire Wire Line
+	4950 4000 5400 4000
+Wire Wire Line
+	6000 4800 6000 4950
+$Comp
+L Memory_Flash:SST39SF010 U3
+U 1 1 62897764
+P 6000 3600
+F 0 "U3" H 6450 5050 50  0000 C CNN
+F 1 "SST39SF010" H 6450 4950 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 6000 3900 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20005022C.pdf" H 6000 3900 50  0001 C CNN
+F 4 "IC FLASH 1MBIT PARALLEL 32DIP" H 6000 3600 50  0001 C CNN "Description"
+F 5 "SST39SF010A-70-4C-PHE-ND‎" H 6000 3600 50  0001 C CNN "Digi-Key_PN"
+F 6 "SST39SF010A-70-4C-PHE" H 6000 3600 50  0001 C CNN "MPN"
+F 7 "Microchip Technology" H 6000 3600 50  0001 C CNN "Manufacturer"
+	1    6000 3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5400 4100
+NoConn ~ 5400 4200
 $EndSCHEMATC
