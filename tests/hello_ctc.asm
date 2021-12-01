@@ -19,16 +19,12 @@
 ;
 ;****************************************************************************
 
-; Blink the SD card select LED.
-; This copies itself from the FLASH into the SRAM and then
-; runs from there.
-
+; Test proggie for the CTC w/support for the SIO.
+; CTC runs with IRQs to implement an uptime timer.
 
 include 'io.asm'
 
 stacktop:   equ 0   ; end of RAM + 1
-
-    org     0x0000          ; Cold reset Z80 entry point.
 
     ;###################################################
     ; NOTE THAT THE SRAM IS NOT READABLE AT THIS POINT
@@ -43,7 +39,7 @@ stacktop:   equ 0   ; end of RAM + 1
     ld  hl,0
     ld  de,0
     ld  bc,_end
-    ldir                    ; Copy all the code in the FLASH into RAM at same address.
+    ldir
 
     ; Disable the FLASH and run from SRAM only from this point on.
     in  a,(flash_disable)   ; Dummy-read this port to disable the FLASH.
@@ -54,40 +50,65 @@ stacktop:   equ 0   ; end of RAM + 1
 
     ld      sp,stacktop
 
-    ; Idle the control signals that could matter, select RAM bank 0,
-    ; and toggle the SD card select line to flash the LED.
+    ; set mode 2 interrupts & load the vector table address into I
+    im      2
+    ld      a,vectab/256    ; A = MSB of the vectab address
+    ld      i,a 
+
+    call    init_ctc_irq
+    call    init_ctc_3
+
+    ld      c,12            ; divide the bit-rate clock by 12 (9600 bps)
+;   ld      c,96            ; divide the bit-rate clock by 96 (1200 bps)
+    call    init_ctc_1
+
+    call    sioa_init
+
+    ei
+
+    ld      hl,0        ; start address
+    ld      bc,_end     ; how many bytes to print
+    ld      e,1         ; fancy format
+    call    hexdump
+
+
 loop:
-    ld      a,gpio_out_sd_mosi|gpio_out_prn_stb
-    out     (gpio_out),a            ; turn the LED on
+    halt
 
-    call    delay
+if 1
+    ; print on modulo N of the uptime
+    ld      hl,(uptime)
+    ld      a,l
+    and     0x3f
+    jp      nz,loop
+endif
 
-    ld      a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
-    out     (gpio_out),a            ; turn the LED off
-
-    call    delay
+    ld      hl,uptime   ; start address
+    ld      bc,0x0004   ; how many bytes to print
+    ld      e,0         ; do not fancy format
+    call    hexdump
 
     jp      loop
 
 
+include 'ctc.asm'
+include 'sio.asm'
+include 'hexdump.asm'
 
-;##############################################################################
-; Waste some time & return 
-;##############################################################################
-delay:
-    ld      hl,0x8000
-dloop:
-    dec     hl
-    ld      a,h
-    or      l
-    jp      nz,dloop
-    ret
+;#############################################################################
+;#############################################################################
+; The mode 2 IRQ vector table 
+; The table must start at an even address since CTC vector is always even.
+; It /can/ be different than a 256-byte boundary...
+;   but the vector offsets are more obvious when it is.
+
+    ds      0x100-($&0xff)  ; align to a 256-byte boundary
+vectab:
+vectab_ctc:     ; vectab_ctc-vectab MUST be a multiple of 8 due to CTC requirements
+    dw      irq_ctc_0
+    dw      irq_ctc_1
+    dw      irq_ctc_2
+    dw      irq_ctc_3
 
 
-
-
-;##############################################################################
-; This marks the end of the data that must be copied from FLASH into RAM
-;##############################################################################
-_end:       equ $
-
+_end:

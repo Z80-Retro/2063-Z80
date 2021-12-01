@@ -19,23 +19,18 @@
 ;
 ;****************************************************************************
 
-; Blink the SD card select LED.
-; This copies itself from the FLASH into the SRAM and then
-; runs from there.
-
+; A test proggie that writes a string out the printer port.
 
 include 'io.asm'
 
 stacktop:   equ 0   ; end of RAM + 1
-
-    org     0x0000          ; Cold reset Z80 entry point.
 
     ;###################################################
     ; NOTE THAT THE SRAM IS NOT READABLE AT THIS POINT
     ;###################################################
 
     ; Select SRAM low bank 0, idle the SD card, and idle printer signals
-    ld  a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
+    ld  a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_sd_clk|gpio_out_prn_stb
     out (gpio_out),a
 
     ; Copy the FLASH into the SRAM by reading every byte and 
@@ -43,7 +38,7 @@ stacktop:   equ 0   ; end of RAM + 1
     ld  hl,0
     ld  de,0
     ld  bc,_end
-    ldir                    ; Copy all the code in the FLASH into RAM at same address.
+    ldir
 
     ; Disable the FLASH and run from SRAM only from this point on.
     in  a,(flash_disable)   ; Dummy-read this port to disable the FLASH.
@@ -54,40 +49,46 @@ stacktop:   equ 0   ; end of RAM + 1
 
     ld      sp,stacktop
 
-    ; Idle the control signals that could matter, select RAM bank 0,
-    ; and toggle the SD card select line to flash the LED.
-loop:
-    ld      a,gpio_out_sd_mosi|gpio_out_prn_stb
-    out     (gpio_out),a            ; turn the LED on
+    call    sioa_init
+    call    lpt_init
 
-    call    delay
+    ld      hl,msg
+    ld      bc,msg_len
+    call    print_str
 
-    ld      a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_prn_stb
-    out     (gpio_out),a            ; turn the LED off
+halt_loop:
+    halt
+    jp      halt_loop
 
-    call    delay
+msg:
+    db      "Hello from the printer!\r\n"
+    db      "This is a test to make sure that the newline works in a sane manner.\r\n"
+msg_len: equ $-msg
 
-    jp      loop
-
-
-
-;##############################################################################
-; Waste some time & return 
-;##############################################################################
-delay:
-    ld      hl,0x8000
-dloop:
-    dec     hl
-    ld      a,h
-    or      l
-    jp      nz,dloop
+;#############################################################################
+; Write BC bytes from memory at address in HL
+;#############################################################################
+print_str:
+    push    bc
+    ld      c,(hl)
+    call    lpt_tx
+    inc     hl
+    pop     bc
+    dec     bc
+    ld      a,b
+    or      c
+    jr      nz,print_str
     ret
 
 
+include 'lpt.asm'
+include 'sio.asm'
+include 'hexdump.asm'
 
+;#############################################################################
+; A copy of the state of the GPIO output port
+;#############################################################################
+gpio_out_cache:
+    db  gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_sd_clk|gpio_out_prn_stb
 
-;##############################################################################
-; This marks the end of the data that must be copied from FLASH into RAM
-;##############################################################################
-_end:       equ $
-
+_end:
