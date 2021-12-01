@@ -2048,12 +2048,12 @@ D7
 $Comp
 L power:GND #PWR010
 U 1 1 62F49F76
-P 4950 4000
-F 0 "#PWR010" H 4950 3750 50  0001 C CNN
-F 1 "GND" H 4955 3827 50  0000 C CNN
-F 2 "" H 4950 4000 50  0001 C CNN
-F 3 "" H 4950 4000 50  0001 C CNN
-	1    4950 4000
+P 4650 4000
+F 0 "#PWR010" H 4650 3750 50  0001 C CNN
+F 1 "GND" H 4655 3827 50  0000 C CNN
+F 2 "" H 4650 4000 50  0001 C CNN
+F 3 "" H 4650 4000 50  0001 C CNN
+	1    4650 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -4251,8 +4251,6 @@ Wire Wire Line
 Text Label 13850 6550 2    50   ~ 0
 ~DTRB
 Wire Wire Line
-	4950 4000 5400 4000
-Wire Wire Line
 	6000 4800 6000 4950
 $Comp
 L Memory_Flash:SST39SF010 U3
@@ -4271,4 +4269,58 @@ F 7 "Microchip Technology" H 6000 3600 50  0001 C CNN "Manufacturer"
 $EndComp
 NoConn ~ 5400 4100
 NoConn ~ 5400 4200
+$Comp
+L Device:R R14
+U 1 1 61ED6941
+P 4900 4000
+F 0 "R14" V 4800 4000 50  0000 C CNN
+F 1 "10K" V 4900 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4830 4000 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-cf_cfm.pdf" H 4900 4000 50  0001 C CNN
+F 4 "RES 10K OHM 5% 1/8W AXIAL" H 4900 4000 50  0001 C CNN "Description"
+F 5 "CF18JT10K0CT-ND" H 4900 4000 50  0001 C CNN "Digi-Key_PN"
+F 6 "CF18JT10K0" H 4900 4000 50  0001 C CNN "MPN"
+F 7 "Stackpole Electronics Inc" H 4900 4000 50  0001 C CNN "Manufacturer"
+	1    4900 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 4000 4750 4000
+$Comp
+L Connector_Generic:Conn_01x02 J12
+U 1 1 62007C5F
+P 4950 3500
+F 0 "J12" V 5050 3500 50  0000 R CNN
+F 1 "Conn_01x02" V 4823 3312 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4950 3500 50  0001 C CNN
+F 3 "https://media.digikey.com/PDF/Data%20Sheets/Sullins%20PDFs/xRxCzzzSxxN-RC_ST_11635-B.pdf" H 4950 3500 50  0001 C CNN
+F 4 "CONN HEADER VERT 2POS 2.54MM" H 4950 3500 50  0001 C CNN "Description"
+F 5 "S1011EC-02-ND" H 4950 3500 50  0001 C CNN "Digi-Key_PN"
+F 6 "PRPC002SAAN-RC" H 4950 3500 50  0001 C CNN "MPN"
+F 7 "Sullins Connector Solutions" H 4950 3500 50  0001 C CNN "Manufacturer"
+	1    4950 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 4000 5400 4000
+Connection ~ 5050 4000
+Wire Wire Line
+	4950 3700 4800 3700
+Wire Wire Line
+	4800 3700 4800 3550
+$Comp
+L power:+5V #PWR019
+U 1 1 62228824
+P 4800 3550
+F 0 "#PWR019" H 4800 3400 50  0001 C CNN
+F 1 "+5V" H 4815 3723 50  0000 C CNN
+F 2 "" H 4800 3550 50  0001 C CNN
+F 3 "" H 4800 3550 50  0001 C CNN
+	1    4800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3700 5050 4000
+Text Notes 5000 3300 1    39   ~ 0
+Populate J12 for FLASH bank select.\n(Not useful if using 2065-Z80-programmer)\nElse leave unpopulated.
 $EndSCHEMATC
