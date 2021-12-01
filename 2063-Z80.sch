@@ -3378,7 +3378,7 @@ F 0 "J2" H 14800 9017 50  0000 C CNN
 F 1 "DM3D-SF(41)" H 14800 8926 50  0000 C CNN
 F 2 "Connector_Card:microSD_HC_Hirose_DM3D-SF" H 16900 8900 50  0001 C CNN
 F 3 "https://www.hirose.com/product/document?clcode=CL0609-0033-6-00&productname=DM3AT-SF-PEJ2M5&series=DM3&documenttype=Catalog&lang=en&documentid=D49662_en" H 14850 8300 50  0001 C CNN
-F 4 "H126097CT-ND‎" H 14850 8200 50  0001 C CNN "Digi-Key_PN"
+F 4 "H126097CT-ND (alternate: 114-00841-68-1-ND)" H 14850 8200 50  0001 C CNN "Digi-Key_PN"
 F 5 "‎DM3D-SF(41)‎ " H 14850 8200 50  0001 C CNN "MPN"
 F 6 "CONN MICRO SD R/A PUSH-PULL SMD" H 14850 8200 50  0001 C CNN "Description"
 F 7 "Hirose Electric Co Ltd" H 14850 8200 50  0001 C CNN "Manufacturer"
