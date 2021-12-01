@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Z80 Retro Board"
-Date "2021-10-13"
-Rev "3"
+Date "2021-12-01"
+Rev "4"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1524,7 +1524,6 @@ Wire Wire Line
 Wire Wire Line
 	13500 6650 14050 6650
 NoConn ~ 13500 6350
-NoConn ~ 13500 6550
 Text Label 750  1600 0    50   ~ 0
 ~IORQ_70
 Text Label 13600 8000 0    50   ~ 0
@@ -3986,10 +3985,8 @@ F 7 "Texas Instruments" H 7250 1250 50  0001 C CNN "Manufacturer"
 $EndComp
 Text Label 2750 4200 0    50   ~ 0
 BA15
-Text Label 13850 5150 2    50   ~ 0
-~RTSA
 Wire Wire Line
-	14150 2450 14150 5150
+	14150 2450 14150 6550
 $Comp
 L power:GND #PWR0156
 U 1 1 6292FD1F
@@ -4016,8 +4013,6 @@ F 3 "" H 7250 700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7250 700  7250 750 
-Wire Wire Line
-	13500 5150 14150 5150
 Connection ~ 4900 1450
 Connection ~ 4900 1650
 Connection ~ 12200 2900
@@ -4281,4 +4276,9 @@ F 7 "Texas Instruments" H 2800 8000 50  0001 C CNN "Manufacturer"
 	3    2800 8000
 	1    0    0    -1  
 $EndComp
+NoConn ~ 13500 5150
+Wire Wire Line
+	13500 6550 14150 6550
+Text Label 13850 6550 2    50   ~ 0
+~DTRB
 $EndSCHEMATC
