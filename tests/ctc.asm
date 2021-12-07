@@ -93,7 +93,7 @@ irq_ctc_3_lo:
     ei
     reti
 
-; uint32_t uptime = number of seconds that the system has been running
+; uint32_t uptime = number of ctc3 IRQ-ticks that the system has been running
 uptime:
     dw  0,0
 
