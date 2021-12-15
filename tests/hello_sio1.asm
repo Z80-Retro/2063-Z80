@@ -21,6 +21,10 @@
 
 ; A proggie to test the SIO in polled mode.
 
+
+do_hexdump: equ 1   ; set to 1 if want to see a hexdump of the code
+
+
 include 'io.asm'
 
 stacktop:   equ 0   ; end of RAM + 1
@@ -49,16 +53,19 @@ stacktop:   equ 0   ; end of RAM + 1
 
     ld      sp,stacktop
 
+if do_hexdump
     ; wipe the stack region to make the subsequent dump easier to see
     ld      hl,0xff00
     ld      (hl),0xa5
     ld      de,0xff01
     ld      bc,0xff
     ldir
+endif
 
     call    sioa_init
     call    siob_init
 
+if do_hexdump
     ; dump the RAM copy of the text region 
     ld      hl,0
     ld      bc,_end
@@ -70,11 +77,12 @@ stacktop:   equ 0   ; end of RAM + 1
     ld      bc,0x100
     ld      e,1
     call    hexdump
+endif
 
     call    helloa
 ;   call    spew_loop
-;   call    echo_loop
-    call    relay
+    call    echo_loop
+;   call    relay
 
 halt_loop:
     halt
@@ -117,6 +125,13 @@ spew_loop1:
     ld      a,0x7f      ; last graphic character + 1
     cp      b
     jp      nz,spew_loop1
+
+    ; start a new line
+    ld      b,'\r'
+    call    sioa_tx_char
+    ld      b,'\n'
+    call    sioa_tx_char
+
     jp      spew_loop
 
 
@@ -126,7 +141,7 @@ spew_loop1:
 echo_loop:
     call    sioa_rx_char    ; get a character from the SIO
     ld      b,a
-    inc     b               ; add 1 (A becomes B, ...)
+;   inc     b               ; add 1 (A becomes B, ...)
     call    sioa_tx_char    ; print the character
     jp      echo_loop
 
@@ -153,6 +168,9 @@ relay_b:
 
 
 include 'sio.asm'
+
+if do_hexdump
 include 'hexdump.asm'
+endif
 
 _end:
