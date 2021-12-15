@@ -21,6 +21,8 @@
 
 ; Test proggie for the CTC w/support for the SIO.
 ; CTC runs with IRQs to implement an uptime timer.
+; SIO runs in polled mode.
+; Use J11-A to select between 115200 and 19200.
 
 include 'io.asm'
 
@@ -58,7 +60,8 @@ stacktop:   equ 0   ; end of RAM + 1
     call    init_ctc_irq
     call    init_ctc_3
 
-    ld      c,12            ; divide the bit-rate clock by 12 (9600 bps)
+    ld      c,6             ; divide the bit-rate clock by 12 (19200 bps)
+;   ld      c,12            ; divide the bit-rate clock by 12 (9600 bps)
 ;   ld      c,96            ; divide the bit-rate clock by 96 (1200 bps)
     call    init_ctc_1
 
@@ -66,9 +69,16 @@ stacktop:   equ 0   ; end of RAM + 1
 
     ei
 
-    ld      hl,0        ; start address
-    ld      bc,_end     ; how many bytes to print
-    ld      e,1         ; fancy format
+    ; skip a line
+    ld      b,'\r'          
+    call    sioa_tx_char
+    ld      b,'\n'
+    call    sioa_tx_char
+
+    ; Dump the memory containing this code
+    ld      hl,0            ; start address
+    ld      bc,_end         ; how many bytes to print
+    ld      e,1             ; fancy format
     call    hexdump
 
 
