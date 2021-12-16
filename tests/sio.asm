@@ -81,7 +81,7 @@ sio_init_wr:
     db      00000100b   ; wr0 = select reg 4
     db      01000100b   ; wr4 = /16 N1 (115200 from 1.8432 MHZ clk)
     db      00000011b   ; wr0 = select reg 3
-    db      11100001b   ; wr3 = RX enable, 8 bits/char
+    db      11000001b   ; wr3 = RX enable, 8 bits/char
     db      00000101b   ; wr0 = select reg 5
     db      01101000b   ; wr5 = DTR=0, TX enable, 8 bits/char
 sio_init_len_wr:   equ $-sio_init_wr
