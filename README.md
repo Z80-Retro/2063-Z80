@@ -13,7 +13,7 @@ The companion bare PCB should cost about $2 more if it is ordered at the same ti
 for the Z80 Retro board, see this [PI Setup Guide](https://github.com/johnwinans/raspberry-pi-install)
 * More software for this project will be added as it evolves.
 
-# Links to Datasheets Seen in the YouTube Videos
+## Links to Related Datasheets Seen On YouTube
 
 * [Z80 User Manual UM0080](http://www.zilog.com/docs/z80/um0080.pdf)
 * [Z80 CPU Peripherals User Manual UM0081](http://www.zilog.com/docs/z80/um0081.pdf)
@@ -21,5 +21,22 @@ for the Z80 Retro board, see this [PI Setup Guide](https://github.com/johnwinans
 * [Wikipedia UART Article](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter)
 * [AY-3-1015D UART Datasheet](https://rocelec.widen.net/view/pdf/bvesdj0cqf/GSIIS01845-1.pdf) (Has a discussion of the 16X bit-rate clock with diagrams etc. applicable to all UARTs.)
 
+## Serial Port Cable Parts
+
+* [How to make IDC cables](https://youtu.be/gZ420Z-8HuU) for the serial ports.
+* [IDC 2x5 connectors](https://www.amazon.com/gp/product/B07S1NFG4S)
+* [IDC D-SUB 9-pin connectors (Digikey)](https://www.digikey.com/en/products/detail/assmann-wsw-components/A-DSF-09LPIII-Z/924263)
+* [IDC D-SUB 9-pin connectors (Amazon)](https://www.amazon.com/Uxcell-a15030600ux0494-Female-Connector-Ribbon/dp/B00YM41NTW)
+
+## Parallel Port Cable Parts
+
+* [IDC 2x13 connectors](https://www.amazon.com/gp/product/B07RXK96GV)
+* [IDC D-SUB 25-pin connectors (Digikey)](https://www.digikey.com/en/products/detail/amphenol-icc-commercial-products/L17DBFRA25S/1972210)
+* [IDC D-SUB 25-pin connectors (Amazon)](https://www.amazon.com/Fielect-Female-Adapter-Connector-Ribbon/dp/B082GMDNTS)
+
+## Ribbon Cable
+
+* [40-conductor (Amazon)](https://www.amazon.com/Eowpower-40Pin-40Way-Rainbow-Ribbon/dp/B079KQ6K3Y) - peel off a
+ 26-pin strip and a 10-pin strip to make one parallel and one serial cable (cut the 10-pin strip in half length-wise to make two serial cables.
 
 ![PC Board Image](2063-Z80.jpg "Retro Z80 CPU Board Rev 2")
