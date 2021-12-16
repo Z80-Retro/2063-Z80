@@ -16,7 +16,7 @@ for the Z80 Retro board, see this [PI Setup Guide](https://github.com/johnwinans
 # Links to Datasheets Seen in the YouTube Videos
 
 * [Z80 User Manual UM0080](http://www.zilog.com/docs/z80/um0080.pdf)
-* [Z80 CPU Peripherals User Manual UM0081](http://www.z80.info/zip/um0081.pdf)
+* [Z80 CPU Peripherals User Manual UM0081](http://www.zilog.com/docs/z80/um0081.pdf)
 * [Z80 Family Product Specifications Handbook - 1984](http://www.bitsavers.org/components/zilog/z80/Z80_Family_Product_Specifications_Handbook_Feb84.pdf)
 * [Wikipedia UART Article](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter)
 * [AY-3-1015D UART Datasheet](https://rocelec.widen.net/view/pdf/bvesdj0cqf/GSIIS01845-1.pdf)
