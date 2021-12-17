@@ -67,7 +67,10 @@ irq_ctc_2:
 init_ctc_3:
     ld      a,0xb7      ; EI, timer mode, /256 prescale, TC follows, reset, ctl
     out     (ctc_3),a
+
     ld      a,0         ; 0=256 (as slow as it can go = system_clock_hz/256/256)
+;    ld      a,1         ; as fast as it can go = system_clock_hz/256/1
+
     out     (ctc_3),a
     ret
 
