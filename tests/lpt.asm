@@ -22,24 +22,30 @@
 ; Driver for the printer port 
 
 ;#############################################################################
+; To initialize the printer:
+; - set the printer PRN_STROBE signal high
+; - set the PRN_INIT signal high
+; - set the PRN_LF signal high
+;
 ; BUG: Aughtta tweak the values in the SIO that control INIT & LF signals.
 ;       This will foolishly assume that the 'default' state of them is OK.
+;
 ; Clobbers AF
 ;#############################################################################
 lpt_init:
     ld      a,(gpio_out_cache)
-    or      gpio_out_prn_stb
+    or      gpio_out_prn_stb    ; make sure that the printer STB signal is high
     ld      (gpio_out_cache),a
     out     (gpio_out),a
     ret
 
 ;#############################################################################
-; Return A=0 if the printer is ready
+; Return A=0 and set the Z flag if the printer is ready
 ; Clobbers AF
 ;#############################################################################
 lpt_ready:
     in      a,(gpio_in)
-    and     gpio_in_prn_bsy     ; if this bit is low then it is ready
+    and     gpio_in_prn_bsy         ; if this bit is low then it is ready
     ret
 
 ;#############################################################################
@@ -47,25 +53,26 @@ lpt_ready:
 ; Clobbers AF
 ;#############################################################################
 lpt_tx:
-    call    lpt_ready
-    jr      nz,lpt_tx
+    call    lpt_ready               ; is the printer ready?
+    jr      nz,lpt_tx               ; No? Loop until it is.
 
-    ld      a,c
+    ld      a,c                     ; A = character to be printed
     out     (prn_dat),a             ; put the character code into the output latch
 
     ; assert the strobe signal
-    ld      a,(gpio_out_cache)
+    ld      a,(gpio_out_cache)      ; get the global saved state of the GP Output latch
     and     ~gpio_out_prn_stb       ; set the strobe signal low
-    out     (gpio_out),a
+    out     (gpio_out),a            ; output the new value on the port (note not saving into cache!)
 
     ; A brief delay so that strobe signal can be seen by the printer.
-    ld      a,0x10
+    ld      a,0x10                  ; count to 0x10 to waste a little time
 lpt_stb_wait:
     dec     a
     jr      nz,lpt_stb_wait
 
     ; raise the strobe signal
-    ld      a,(gpio_out_cache)
-    out     (gpio_out),a
+    ld      a,(gpio_out_cache)      ; set the GP Output latch value...
+    out     (gpio_out),a            ;               ...back to what it was
+
     ret
 
