@@ -82,10 +82,15 @@ stacktop:   equ 0   ; end of RAM + 1
     call    hexdump
 
 
-loop:
-    halt
 
-if 1
+if 0
+; XXX This loop logic is not safe!
+loop:
+    halt                    ; do nothing until an IRQ or RESET
+
+    ; The only way to get here is if an IRQ has occurred...
+
+if 0
     ; print on modulo N of the uptime
     ld      hl,(uptime)
     ld      a,l
@@ -96,9 +101,46 @@ endif
     ld      hl,uptime   ; start address
     ld      bc,0x0004   ; how many bytes to print
     ld      e,0         ; do not fancy format
-    call    hexdump
+
+    call    hexdump     ; XXX This COULD be interrupted!
+                        ; XXX What if printing takes longer than the IRQ period????
 
     jp      loop
+endif
+
+
+
+; This is an alternate version that is 'safe'
+safeloop:
+    halt                ; do nothing until an IRQ or RESET
+
+if 1
+    ; print on modulo N of the uptime
+    ld      hl,(uptime)
+    ld      a,l
+    and     0x3f
+    jp      nz,safeloop
+endif
+
+    ; Copy the uptime counter with IRQs disables so we get a clean copy!
+    di
+    ld      hl,(uptime)
+    ld      (safeuptime),hl
+    ld      hl,(uptime+2)
+    ld      (safeuptime+2),hl
+    ei
+
+    ld      hl,safeuptime   ; start address
+    ld      bc,0x0004       ; how many bytes to print
+    ld      e,0             ; do not fancy format
+    call    hexdump     
+
+    jp      safeloop
+
+
+safeuptime:
+    dw  0,0
+
 
 
 include 'ctc.asm'
