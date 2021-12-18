@@ -35,7 +35,6 @@ stacktop:   equ 0   ; end of RAM + 1
     ;###################################################
 _start:
     ; Select SRAM low bank 0, idle the SD card, and idle printer signals
-;   ld      a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_sd_clk|gpio_out_prn_stb
     ld      a,(gpio_out_cache)
     out     (gpio_out),a
 
