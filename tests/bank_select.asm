@@ -25,15 +25,18 @@ include 'io.asm'
 
 stacktop:   equ 0   ; end of RAM + 1
 
-    jp      _start
+
+    jp      _start          ; jump into the HI-bank of memory
     ds      0x8000-$,0xff   ; push the remaining code into the high-bank
+
 
     ;###################################################
     ; NOTE THAT THE SRAM IS NOT READABLE AT THIS POINT
     ;###################################################
 _start:
     ; Select SRAM low bank 0, idle the SD card, and idle printer signals
-    ld      a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_sd_clk|gpio_out_prn_stb
+;   ld      a,gpio_out_sd_mosi|gpio_out_sd_ssel|gpio_out_sd_clk|gpio_out_prn_stb
+    ld      a,(gpio_out_cache)
     out     (gpio_out),a
 
     ; Copy the FLASH into the SRAM by reading every byte and 
@@ -59,39 +62,44 @@ _start:
     ld      bc,0xff
     ldir
 
-    call    sioa_init
+    call    sioa_init           ; bring the SIO on line
+
+    ; Print a message indicating the program is running
     ld      hl,startup_msg
     call    puts
 
 
-    ld      c,0x00
-    call    select_bank
-    call    fill_lo_bank
+    ; NOTE: This code is running in the HI-bank of RAM, so it is OK to
+    ; change the menory that appears in the LO-bank here.
+
+    ld      c,0x00              ; Set the SRAM to bank 0
+    call    select_bank         ; Set A15-A18 to 0
+    call    fill_lo_bank        ; fill 0x0000-0x7fff with 0x00
 
     ld      c,0x10
-    call    select_bank
-    call    fill_lo_bank
+    call    select_bank         ; Set A15-A18 to 0x10 (bank 1)
+    call    fill_lo_bank        ; fill 0x0000-0x7fff with 0x10
 
     ld      c,0x20
-    call    select_bank
-    call    fill_lo_bank
+    call    select_bank         ; Set A15-A18 to 0x10 (bank 2)
+    call    fill_lo_bank        ; fill 0x0000-0x7fff with 0x20
 
     ld      c,0xe0
-    call    select_bank
-    call    fill_lo_bank
+    call    select_bank         ; Set A15-A18 to 0xe0 (bank 14)
+    call    fill_lo_bank        ; fill 0x0000-0x7fff with 0xe0
 
     ld      c,0x00
-    call    dump_bank       ; should still be 0x00 
+    call    dump_bank           ; Select bank 0 and dump its contents
     ld      c,0x10
-    call    dump_bank       ; should still be 0x10
+    call    dump_bank           ; Select bank 1 and dump its contents
     ld      c,0x20
-    call    dump_bank       ; should still be 0x20
+    call    dump_bank           ; Select bank 2 and dump its contents
     ld      c,0x30
-    call    dump_bank       ; should be garbage
+    call    dump_bank           ; Select bank 3 and dump what should be garbage
     ld      c,0xe0
-    call    dump_bank       ; should be the executable code
+    call    dump_bank           ; Select bank 14 and dump its contents
     ld      c,0xf0
-    call    dump_bank       ; should be garbage followed by the stack data
+    call    dump_bank           ; Bank 15 executable code followed by the stack data
 
 
 halt_loop:
@@ -128,13 +136,13 @@ dump_bank:
     call    puts
 
     ld      hl,0
-    ld      bc,0x20
+    ld      bc,0x30
     ld      e,1
     call    hexdump
     ld      hl,dots
     call    puts
-    ld      hl,0x7fe0
-    ld      bc,0x20
+    ld      hl,0x7fd0
+    ld      bc,0x30
     ld      e,1
     call    hexdump
     pop     bc
@@ -174,29 +182,7 @@ select_bank:
     pop     af
     ret
 
-;#############################################################################
-; Write bytes from memory at address in HL to the console until we reach 
-; a null character.
-; Clobbers nothing
-;#############################################################################
-puts:
-    push    af
-    push    bc
-    push    hl
-puts_loop:
-    ld      a,(hl)
-    or      a       
-    jp      z,puts_done
-    ld      b,a
-    call    sioa_tx_char
-    inc     hl
-    jp      puts_loop
-puts_done:
-    pop     hl
-    pop     bc
-    pop     af
-    ret
-
+include 'puts.asm'
 include 'sio.asm'
 include 'hexdump.asm'
 
