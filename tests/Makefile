@@ -8,7 +8,8 @@ PROGS=\
 	hello_ctc.bin \
 	bank_select.bin \
 	hello_lpt1.bin \
-	hello_lpt2.bin
+	hello_lpt2.bin \
+	status_gpio.bin
 
 all: $(PROGS)
 
@@ -31,4 +32,5 @@ hello_sio2.bin: hello_sio2.asm io.asm sio.asm hexdump.asm
 hello_lpt1.bin: hello_lpt1.asm io.asm lpt.asm sio.asm hexdump.asm
 hello_lpt2.bin: hello_lpt2.asm io.asm lpt.asm sio.asm hexdump.asm
 hello_ctc.bin: hello_ctc.asm ctc.asm io.asm sio.asm hexdump.asm
-bank_select.bin: bank_select.asm io.asm sio.asm hexdump.asm
+bank_select.bin: bank_select.asm io.asm sio.asm hexdump.asm puts.asm
+status_gpio.bin: status_gpio.asm io.asm sio.asm hexdump.asm puts.asm
