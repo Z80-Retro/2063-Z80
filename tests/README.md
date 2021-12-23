@@ -33,7 +33,7 @@ Test the SIO ports in polled mode.
 ### hello_sio2.asm
 Test the SIO ports in IRQ mode.
 
-### hello_ctc.asm
+### hello_ctc2.asm
 Test the CTC with IRQs and print an 'uptime' counter using the SIO.
 
 ## bank_select.asm
