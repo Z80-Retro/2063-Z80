@@ -51,10 +51,22 @@ stacktop:   equ 0   ; end of RAM + 1
 
     ld      sp,stacktop
 
-    ; initialize the CTC to provide an alternate bit-rate for SIOA
-    ld      c,6             ; divide the bit-rate clock by 12 (19200 bps)
-;   ld      c,12            ; divide the bit-rate clock by 12 (9600 bps)
-;   ld      c,96            ; divide the bit-rate clock by 96 (1200 bps)
+    ; Initialize the CTC to provide an alternate bit-rate for SIOA.
+    ; The following values assume that SIOA has a /16 prescaler.
+    ; C = bit-rate clock divisor 
+
+    ld      c,1             ; 115200 bps
+;    ld      c,2             ; 57600 bps
+;    ld      c,3             ; 38400 bps
+;    ld      c,4             ; 28800 bps
+;    ld      c,6             ; 19200 bps
+;    ld      c,8             ; 14400 bps
+;    ld      c,12            ; 9600 bps
+;    ld      c,24            ; 4800 bps
+;    ld      c,48            ; 2400 bps
+;    ld      c,96            ; 1200 bps
+;    ld      c,192           ; 600 bps
+
     call    init_ctc_1
 
     call    sioa_init
@@ -92,6 +104,7 @@ echo_loop:
 ;#############################################################################
 init_ctc_1:
     ld      a,0x57      ; TC follows, Rising, Counter, Control, Reset
+;    ld      a,0x17      ; TC follows, Rising, Timer, Control, Reset
     out     (ctc_1),a
     ld      a,c
     out     (ctc_1),a
