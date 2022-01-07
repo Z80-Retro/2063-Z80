@@ -104,6 +104,8 @@ uptime:
 
 
 ;#############################################################################
+; Note that the vector number in channel zero is used for ALL 
+; channels in the CTC.
 ;#############################################################################
 init_ctc_irq:
     ; The channel 0 vector used for all channels!
