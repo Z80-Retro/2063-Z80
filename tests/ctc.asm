@@ -60,6 +60,7 @@ irq_ctc_2:
 
 ;#############################################################################
 ; Set CTC3 to free-run and generate IRQs at system_clock_hz/65536.
+; If system_clock_hz == 10 MHZ then the IRQ rate will be approx. 152 HZ.
 ;
 ; Note: It is OK to EI before we send the time-constant because the
 ; timer will not yet have been started.
@@ -98,7 +99,7 @@ irq_ctc_3_lo:
 
 ; uint32_t uptime = number of ctc3 IRQ-ticks that the system has been running
 uptime:
-    dw  0,0
+    db  0,0,0,0
 
 
 
@@ -109,6 +110,5 @@ uptime:
 ;#############################################################################
 init_ctc_irq:
     ; The channel 0 vector used for all channels!
-    ld      a,vectab_ctc-vectab
     out     (ctc_0),a   ; set the mode-2 IRQ vector (LSB is zero)
     ret
