@@ -5,7 +5,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Z80 Retro Board"
-Date "2021-12-01"
+Date "2022-03-14"
 Rev "4"
 Comp ""
 Comment1 ""
@@ -4265,8 +4265,6 @@ F 7 "Microchip Technology" H 6000 3600 50  0001 C CNN "Manufacturer"
 	1    6000 3600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5400 4100
-NoConn ~ 5400 4200
 $Comp
 L Device:R R14
 U 1 1 61ED6941
@@ -4383,5 +4381,47 @@ F 6 "CF18JT120R" H 9300 1500 50  0001 C CNN "MPN"
 F 7 "Stackpole Electronics Inc" H 9300 1500 50  0001 C CNN "Manufacturer"
 	1    9300 1500
 	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 4200 5400 4200
+Wire Wire Line
+	5300 4100 5400 4100
+Wire Wire Line
+	5100 4100 5100 4200
+$Comp
+L power:GND #PWR0143
+U 1 1 625BB6C7
+P 5000 4100
+F 0 "#PWR0143" H 5000 3850 50  0001 C CNN
+F 1 "GND" H 5005 3927 50  0000 C CNN
+F 2 "" H 5000 4100 50  0001 C CNN
+F 3 "" H 5000 4100 50  0001 C CNN
+	1    5000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4100 5000 4100
+Connection ~ 5100 4100
+$Comp
+L Device:Net-Tie_2 NT2
+U 1 1 62392D87
+P 5200 4200
+F 0 "NT2" H 5200 4289 50  0001 C CNN
+F 1 "Net-Tie_2" H 5200 4290 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 5200 4200 50  0001 C CNN
+F 3 "~" H 5200 4200 50  0001 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Net-Tie_2 NT1
+U 1 1 6241E3EB
+P 5200 4100
+F 0 "NT1" H 5200 4189 50  0001 C CNN
+F 1 "Net-Tie_2" H 5200 4190 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 5200 4100 50  0001 C CNN
+F 3 "~" H 5200 4100 50  0001 C CNN
+	1    5200 4100
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
