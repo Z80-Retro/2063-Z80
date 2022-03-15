@@ -1,36 +1,33 @@
 #!/bin/bash
 
 
-V3_TAG=v3
-V4_TAG=v4rc1
+A_TAG=v3
+B_TAG=v4rc1
 SCRATCH=/tmp/$$-2063
 
-V3_TMP=${SCRATCH}/${V3_TAG}
-V4_TMP=${SCRATCH}/${V4_TAG}
+A_TMP=${SCRATCH}/${A_TAG}
+B_TMP=${SCRATCH}/${B_TAG}
 
-mkdir -p ${V3_TMP}
-mkdir -p ${V4_TMP}
+mkdir -p ${A_TMP}
+mkdir -p ${B_TMP}
 
-# if only want the gerbers directory:
-#git --work-tree=${V3_TMP} checkout ${V3_TAG} -- gerbers
-#git --work-tree=${V4_TMP} checkout ${V4_TAG} -- gerbers
+git show ${A_TAG}:gerbers/2063-Z80-F_Cu.gtl > ${A_TMP}/2063-Z80-F_Cu.gtl
+git show ${A_TAG}:gerbers/2063-Z80-B_Cu.gbl > ${A_TMP}/2063-Z80-B_Cu.gbl
+git show ${A_TAG}:2063-Z80.pdf> ${A_TMP}/2063-Z80.pdf
 
-git --work-tree=${V3_TMP} checkout ${V3_TAG}
-git --work-tree=${V4_TMP} checkout ${V4_TAG}
+git show ${B_TAG}:gerbers/2063-Z80-F_Cu.gtl > ${B_TMP}/2063-Z80-F_Cu.gtl
+git show ${B_TAG}:gerbers/2063-Z80-B_Cu.gbl > ${B_TMP}/2063-Z80-B_Cu.gbl
+git show ${B_TAG}:2063-Z80.pdf> ${B_TMP}/2063-Z80.pdf
 
 # Generate a .pdf showing the diffs in the schematic drawings
 
-compare ${V3_TMP}/2063-Z80.pdf ${V4_TMP}/2063-Z80.pdf ${SCRATCH}/2063-Z80-v3-v4-delta.pdf
+compare ${A_TMP}/2063-Z80.pdf ${B_TMP}/2063-Z80.pdf 2063-Z80-${A_TAG}-${B_TAG}-delta.pdf
 
 # Generate .png files showing the diffs between the v3 and v4rc1 PCBs
 
-gerbv --dpi=600 --border=0 --export=png --output=${SCRATCH}/${V3_TAG}.png ${V3_TMP}/gerbers/*.{gtl,gbl}
-gerbv --dpi=600 --border=0 --export=png --output=${SCRATCH}/${V4_TAG}.png ${V4_TMP}/gerbers/*.{gtl,gbl}
+gerbv --dpi=600 --border=0 --export=png --output=${A_TMP}.png ${A_TMP}/*.{gtl,gbl}
+gerbv --dpi=600 --border=0 --export=png --output=${B_TMP}.png ${B_TMP}/*.{gtl,gbl}
 
-compare ${SCRATCH}/${V3_TAG}.png ${SCRATCH}/${V4_TAG}.png ${SCRATCH}/2063-Z80-${V3_TAG}-${V4_TAG}-delta.png
+compare ${A_TMP}.png ${B_TMP}.png 2063-Z80-${A_TAG}-${B_TAG}-delta.png
 
-git checkout main
-cp ${SCRATCH}/*-delta.png ${SCRATCH}/*.pdf .
-
-
-rm -rf ${SCRATCH}
+#rm -rf ${SCRATCH}
