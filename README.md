@@ -2,6 +2,8 @@
 
 This project was designed to run CP/M 2.2 from an SD card.  It should be an attainable goal for anyone that can solder through-hole parts to assemble it. Note that J10 is an optional header that allows a Sparkfun SD card breakout board [DEV-13743](https://www.digikey.com/en/products/detail/sparkfun-electronics/DEV-13743/5881845) to used instead of soldering on the surface-mount SD socket part.
 
+**Software** for this board can be found in my [2063-Z80-cpm](https://github.com/johnwinans/2063-Z80-cpm) repo.
+
 **Note that a [companion board](https://github.com/johnwinans/2065-Z80-programmer) is designed that can be used to program the FLASH chip in the event that you don't have a programmer already.**
 The companion bare PCB should cost about $2 more if it is ordered at the same time as this board from JLCPCB or other similar proto-board shops.
 
