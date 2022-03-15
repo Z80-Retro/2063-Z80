@@ -30,4 +30,4 @@ gerbv --dpi=600 --border=0 --export=png --output=${B_TMP}.png ${B_TMP}/*.{gtl,gb
 
 compare ${A_TMP}.png ${B_TMP}.png 2063-Z80-${A_TAG}-${B_TAG}-delta.png
 
-#rm -rf ${SCRATCH}
+rm -rf ${SCRATCH}
