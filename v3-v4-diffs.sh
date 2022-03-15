@@ -29,8 +29,8 @@ gerbv --dpi=600 --border=0 --export=png --output=${SCRATCH}/${V4_TAG}.png ${V4_T
 
 compare ${SCRATCH}/${V3_TAG}.png ${SCRATCH}/${V4_TAG}.png ${SCRATCH}/2063-Z80-${V3_TAG}-${V4_TAG}-delta.png
 
-git checkout head
-cp ${SCRATCH}/*.png ${SCRATCH}/*.pdf .
+git checkout main
+cp ${SCRATCH}/*-delta.png ${SCRATCH}/*.pdf .
 
 
 rm -rf ${SCRATCH}
