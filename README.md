@@ -4,13 +4,13 @@ This project was designed to run CP/M 2.2 from an SD card.  It should be an atta
 
 ## Where to get Boards & Software
 
-* You can order boards from any prototype PCB vendor.  For example, you can order boards from JLCPCB by uploading the gerber files found in the releases of this and the flash programmer projects as shown in this [Z80 Retro! - How To Order PC Boards](https://youtu.be/AUg_sbPnzn0) video on YouTube.
+* You can order boards from any prototype PCB vendor.  For example, I show how you can order these boards from [JLCPCB](https://jlcpcb.com/) or [OSHPark](https://oshpark.com/) by uploading the gerber files found in the releases of this and the flash programmer projects as shown in this [Z80 Retro! - How To Order PC Boards](https://youtu.be/AUg_sbPnzn0) video on YouTube.
   - Gerber files for the CPU board: [2063-Z80-v3](https://github.com/johnwinans/2063-Z80/releases/download/v3/2063-Z80-gerbers.zip)
   - Gerber files for the FLASH programmer: [2065-Z80-programmer-v2](https://github.com/johnwinans/2065-Z80-programmer/releases/download/v2.0/2065-Z80-programmer-gerbers.zip) (This is used with a Raspberry PI to program the FLASH chip on the CPU board.)
 
 * Software for this project can be found in my [2063-Z80-cpm](https://github.com/johnwinans/2063-Z80-cpm) repo.
 
-* Note that a [companion board](https://github.com/johnwinans/2065-Z80-programmer) has been designed to program the FLASH chip in the event that you don't already own such programmer.  The companion bare PCB should cost about $2 more if it is ordered at the same time as this board from JLCPCB or other similar proto-board shops.
+* Note that the [FLASH programmer](https://github.com/johnwinans/2065-Z80-programmer) has been designed to work with a Raspberry PI in the event that you don't already own such programmer.  This companion programmer PCB should cost about $2 more when it is ordered at the same time as the CPU board from JLCPCB or other similar proto-board shops as shown in the [Z80 Retro! - How To Order PC Boards](https://youtu.be/AUg_sbPnzn0) video on YouTube.
 
 ## Links to Related Material
 
