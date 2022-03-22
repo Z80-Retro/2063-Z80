@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Z80 Retro Board"
-Date "2022-03-14"
-Rev "4"
+Date "2022-03-21"
+Rev "4.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -4424,4 +4424,76 @@ F 3 "~" H 5200 4100 50  0001 C CNN
 	1    5200 4100
 	1    0    0    -1  
 $EndComp
+Text Notes 9350 8000 0    50   ~ 0
+Sparkfun DEV-14050\nCompatible USB-Serial adapter
+Wire Wire Line
+	9750 7100 10150 7100
+Wire Wire Line
+	9750 7250 9750 7100
+$Comp
+L Connector_Generic:Conn_01x06 J13
+U 1 1 62501237
+P 9950 7450
+F 0 "J13" H 10030 7396 50  0000 L CNN
+F 1 "Conn_01x06" H 10030 7351 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 9950 7450 50  0001 C CNN
+F 3 "~" H 9950 7450 50  0001 C CNN
+	1    9950 7450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9750 7350
+$Comp
+L power:GND #PWR022
+U 1 1 62765B2E
+P 10150 7100
+F 0 "#PWR022" H 10150 6850 50  0001 C CNN
+F 1 "GND" H 10155 6927 50  0000 C CNN
+F 2 "" H 10150 7100 50  0001 C CNN
+F 3 "" H 10150 7100 50  0001 C CNN
+	1    10150 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 7450 9150 7450
+Wire Wire Line
+	9750 7550 9300 7550
+Text Label 9300 7650 0    50   ~ 0
+SIO_TXA
+Text Label 9300 7550 0    50   ~ 0
+SIO_RXA
+Wire Wire Line
+	9750 7650 9300 7650
+NoConn ~ 9750 7750
+$Comp
+L Connector_Generic:Conn_01x02 J14
+U 1 1 62A4B3FB
+P 8950 7450
+F 0 "J14" H 9000 7250 50  0000 R CNN
+F 1 "Conn_01x02" V 8823 7262 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 8950 7450 50  0001 C CNN
+F 3 "" H 8950 7450 50  0001 C CNN
+F 4 "" H 8950 7450 50  0001 C CNN "Description"
+F 5 "" H 8950 7450 50  0001 C CNN "Digi-Key_PN"
+F 6 "" H 8950 7450 50  0001 C CNN "MPN"
+F 7 "" H 8950 7450 50  0001 C CNN "Manufacturer"
+	1    8950 7450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 7550 9150 7750
+Wire Wire Line
+	9150 7750 8750 7750
+$Comp
+L power:+5V #PWR0158
+U 1 1 62B6A78F
+P 8750 7750
+F 0 "#PWR0158" H 8750 7600 50  0001 C CNN
+F 1 "+5V" H 8765 7923 50  0000 C CNN
+F 2 "" H 8750 7750 50  0001 C CNN
+F 3 "" H 8750 7750 50  0001 C CNN
+	1    8750 7750
+	1    0    0    -1  
+$EndComp
+Text Notes 8200 7500 0    50   ~ 0
+Insert J14 to\npower from J13\n
 $EndSCHEMATC
