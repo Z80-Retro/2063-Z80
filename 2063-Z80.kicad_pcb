@@ -5693,7 +5693,7 @@
   (gr_text 2.7K (at 106.7816 111.2012 90) (layer F.SilkS) (tstamp 611EA697)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text '00 (at 149.86 121.92 270) (layer F.SilkS) (tstamp 61081440)
+  (gr_text 74HCT132 (at 149.8 128.3 270) (layer F.SilkS) (tstamp 61081440)
     (effects (font (size 1.016 1.016) (thickness 0.2286)))
   )
   (gr_text '32 (at 139.192 122.428 270) (layer F.SilkS) (tstamp 6108142E)
