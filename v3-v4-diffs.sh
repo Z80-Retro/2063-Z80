@@ -2,7 +2,7 @@
 
 
 A_TAG=v3
-B_TAG=v4rc1
+B_TAG=v4rc2
 SCRATCH=/tmp/$$-2063
 
 A_TMP=${SCRATCH}/${A_TAG}
