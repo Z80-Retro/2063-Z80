@@ -1309,7 +1309,7 @@ Text Notes 4900 7400 0    118  ~ 24
 GP Input
 Text Notes 1500 10050 0    118  ~ 24
 GP Output
-Text Notes 4900 10050 0    118  ~ 24
+Text Notes 4150 10400 0    118  ~ 24
 Printer Data
 Text Notes 14400 4550 0    118  ~ 24
 PC Parallel Compatible
@@ -4237,8 +4237,8 @@ F 3 "~" H 5200 4100 50  0001 C CNN
 	1    5200 4100
 	1    0    0    -1  
 $EndComp
-Text Notes 10550 8150 0    50   ~ 0
-Sparkfun DEV-14050\nCompatible USB-Serial adapter
+Text Notes 9700 8150 0    50   ~ 0
+Optional Sparkfun DEV-14050\nCompatible USB-Serial adapter
 $Comp
 L Connector_Generic:Conn_01x06 J13
 U 1 1 62501237
@@ -4302,8 +4302,8 @@ F 3 "" H 9450 7900 50  0001 C CNN
 	1    9450 7900
 	1    0    0    -1  
 $EndComp
-Text Notes 8950 7650 0    50   ~ 0
-Insert J14 to\npower from J13\n
+Text Notes 9350 7500 0    50   ~ 0
+Insert\nJ14 to\npower\nfrom J13
 Text Notes 11250 7850 0    50   ~ 0
 RXI
 Text Notes 11250 7750 0    50   ~ 0
@@ -4639,4 +4639,22 @@ F 3 "" H 9800 7400 50  0001 C CNN
 	1    9800 7400
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	11500 7150 11500 8150
+Wire Notes Line
+	11500 8150 9350 8150
+Wire Notes Line
+	9350 8150 9350 7150
+Wire Notes Line
+	9350 7150 11500 7150
+Wire Notes Line
+	6000 9400 6850 9400
+Wire Notes Line
+	6850 9400 6850 10250
+Wire Notes Line
+	6850 10250 6000 10250
+Wire Notes Line
+	6000 10250 6000 9400
+Text Notes 6050 10200 0    50   ~ 0
+Populate only for \nUSB-Serial adapter
 $EndSCHEMATC
