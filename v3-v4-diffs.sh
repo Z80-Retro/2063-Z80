@@ -2,8 +2,12 @@
 
 
 A_TAG=v3
-B_TAG=v4rc2
+B_TAG=HEAD
 SCRATCH=/tmp/$$-2063
+
+#OUT_NAME=2063-Z80-${A_TAG}-${B_TAG}-delta
+OUT_NAME=2063-Z80-${A_TAG}-v4.3-delta
+
 
 A_TMP=${SCRATCH}/${A_TAG}
 B_TMP=${SCRATCH}/${B_TAG}
@@ -21,13 +25,13 @@ git show ${B_TAG}:2063-Z80.pdf> ${B_TMP}/2063-Z80.pdf
 
 # Generate a .pdf showing the diffs in the schematic drawings
 
-compare ${A_TMP}/2063-Z80.pdf ${B_TMP}/2063-Z80.pdf 2063-Z80-${A_TAG}-${B_TAG}-delta.pdf
+compare ${A_TMP}/2063-Z80.pdf ${B_TMP}/2063-Z80.pdf ${OUT_NAME}-schematic.pdf
 
 # Generate .png files showing the diffs between the v3 and v4rc1 PCBs
 
 gerbv --dpi=600 --border=0 --export=png --output=${A_TMP}.png ${A_TMP}/*.{gtl,gbl}
 gerbv --dpi=600 --border=0 --export=png --output=${B_TMP}.png ${B_TMP}/*.{gtl,gbl}
 
-compare ${A_TMP}.png ${B_TMP}.png 2063-Z80-${A_TAG}-${B_TAG}-delta.png
+compare ${A_TMP}.png ${B_TMP}.png ${OUT_NAME}-pcb.png
 
 rm -rf ${SCRATCH}
