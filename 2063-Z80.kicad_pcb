@@ -5797,7 +5797,7 @@
   (gr_text "SST39SF010A\nFLASH" (at 154.686 64.008) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "AS6C1008\nSRAM" (at 136.144 64.008) (layer F.SilkS)
+  (gr_text "AS6C4008\nSRAM" (at 136.144 64.008) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text Z80 (at 118.618 64.008) (layer F.SilkS)
