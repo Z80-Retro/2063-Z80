@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Z80 Retro Board"
-Date "2022-06-20"
-Rev "4.3"
+Date "2023-02-10"
+Rev "4.3.1"
 Comp ""
 Comment1 ""
 Comment2 ""
