@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Z80 Retro Board"
 Date "2023-02-10"
-Rev "4.3.1"
+Rev "4.3.3"
 Comp ""
 Comment1 ""
 Comment2 ""
