@@ -76,7 +76,7 @@ if 1
     ; An ugly hack to tweak the bit-rate divisor on SIO port A to /64
     ld      a,00000100b ; select reg 4
     out     (sio_ac),a
-    ld      a,11000100b ; wr4 = /64 N1 (see UM008101-0601, pdf page 262)
+    ld      a,11000100b ; wr4 = /64 N1 (see UM008101-0601, page 286-287, [pdf page 306-307])
     out     (sio_ac),a
 endif
 
