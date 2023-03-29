@@ -2,6 +2,8 @@
 
 This project was designed to run CP/M 2.2 from an SD card.  It should be an attainable goal for anyone that can solder through-hole parts to assemble it. Note that J10 is an optional header that allows a Sparkfun SD card breakout board [DEV-13743](https://www.digikey.com/en/products/detail/sparkfun-electronics/DEV-13743/5881845) to used instead of soldering on the surface-mount SD socket part.
 
+Here is an easy-to-find direct link to the [PDF of the schematic](https://github.com/Z80-Retro/2063-Z80/raw/main/2063-Z80.pdf) for a quick view.
+
 ## Where to get Boards & Software
 
 * You can order boards from any prototype PCB vendor.  For example, I show how you can order these boards from [JLCPCB](https://jlcpcb.com/) or [OSHPark](https://oshpark.com/) by uploading the gerber files found in the releases of this and the flash programmer projects as shown in this [Z80 Retro! - How To Order PC Boards](https://youtu.be/AUg_sbPnzn0) video on YouTube.
