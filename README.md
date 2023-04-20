@@ -53,3 +53,11 @@ for the Z80 Retro board, see this [PI Setup Guide](https://github.com/johnwinans
  26-pin strip and a 10-pin strip to make one parallel and one serial cable (cut the 10-pin strip in half length-wise to make two serial cables.
 
 ![PC Board Image](2063-Z80.jpg "Retro Z80 CPU Board Rev 2")
+
+# Release Notes
+
+## V4.4.0
+
+- Change footprint for SD socket to increase the pad size for mounting the case.
+- Label R15 and R16 as DNP.
+- Move the [diffs](./diffs/) into their own directory.

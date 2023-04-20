@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Z80 Retro Board"
 Date "2023-02-10"
-Rev "4.3.3"
+Rev "4.4.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -3360,7 +3360,7 @@ U 1 1 61047A45
 P 14850 8200
 F 0 "J2" H 14800 9017 50  0000 C CNN
 F 1 "DM3D-SF(41)" H 14800 8926 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Hirose_DM3D-SF" H 16900 8900 50  0001 C CNN
+F 2 "jb-footprint:microSD_HC_Hirose_DM3D-SF-bigpad" H 16900 8900 50  0001 C CNN
 F 3 "https://www.hirose.com/product/document?clcode=CL0609-0033-6-00&productname=DM3AT-SF-PEJ2M5&series=DM3&documenttype=Catalog&lang=en&documentid=D49662_en" H 14850 8300 50  0001 C CNN
 F 4 "H126097CT-ND (alternate: 114-00841-68-1-ND)" H 14850 8200 50  0001 C CNN "Digi-Key_PN"
 F 5 "‎DM3D-SF(41)‎ " H 14850 8200 50  0001 C CNN "MPN"
@@ -3983,8 +3983,8 @@ Wire Wire Line
 Connection ~ 4900 1450
 Connection ~ 4900 1650
 Connection ~ 12200 2900
-Text Notes 8200 1900 0    118  ~ 24
-System Clock
+Text Notes 8400 2150 0    118  ~ 24
+System\nClock
 $Comp
 L Oscillator:CXO_DIP8 X1
 U 1 1 61DBCC1A
@@ -4320,21 +4320,21 @@ Wire Wire Line
 Text Notes 5000 3300 1    39   ~ 0
 Populate J12 for FLASH bank select.\n(Not useful if using 2065-Z80-programmer)\nElse leave unpopulated.
 Wire Wire Line
-	9150 1500 9150 1200
+	9150 1600 9150 1200
 Connection ~ 9150 1200
 Wire Wire Line
 	9150 1200 9350 1200
 Wire Wire Line
-	9450 1500 9550 1500
+	9450 1600 9550 1600
 $Comp
 L power:GND #PWR020
 U 1 1 61C29EFA
-P 9550 1500
-F 0 "#PWR020" H 9550 1250 50  0001 C CNN
-F 1 "GND" H 9555 1327 50  0000 C CNN
-F 2 "" H 9550 1500 50  0001 C CNN
-F 3 "" H 9550 1500 50  0001 C CNN
-	1    9550 1500
+P 9550 1600
+F 0 "#PWR020" H 9550 1350 50  0001 C CNN
+F 1 "GND" H 9555 1427 50  0000 C CNN
+F 2 "" H 9550 1600 50  0001 C CNN
+F 3 "" H 9550 1600 50  0001 C CNN
+	1    9550 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -4370,16 +4370,16 @@ Wire Wire Line
 $Comp
 L Device:R R15
 U 1 1 61D53855
-P 9300 1500
-F 0 "R15" V 9200 1500 50  0000 C CNN
-F 1 "120" V 9300 1500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9230 1500 50  0001 C CNN
-F 3 "https://www.seielect.com/catalog/sei-cf_cfm.pdf" H 9300 1500 50  0001 C CNN
-F 4 "RES 120 OHM 5% 1/8W AXIAL" H 9300 1500 50  0001 C CNN "Description"
-F 5 "CF18JT120RCT-ND" H 9300 1500 50  0001 C CNN "Digi-Key_PN"
-F 6 "CF18JT120R" H 9300 1500 50  0001 C CNN "MPN"
-F 7 "Stackpole Electronics Inc" H 9300 1500 50  0001 C CNN "Manufacturer"
-	1    9300 1500
+P 9300 1600
+F 0 "R15" V 9200 1600 50  0000 C CNN
+F 1 "120" V 9300 1600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9230 1600 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-cf_cfm.pdf" H 9300 1600 50  0001 C CNN
+F 4 "RES 120 OHM 5% 1/8W AXIAL" H 9300 1600 50  0001 C CNN "Description"
+F 5 "CF18JT120RCT-ND" H 9300 1600 50  0001 C CNN "Digi-Key_PN"
+F 6 "CF18JT120R" H 9300 1600 50  0001 C CNN "MPN"
+F 7 "Stackpole Electronics Inc" H 9300 1600 50  0001 C CNN "Manufacturer"
+	1    9300 1600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -4424,4 +4424,24 @@ F 3 "~" H 5200 4100 50  0001 C CNN
 	1    5200 4100
 	1    0    0    -1  
 $EndComp
+Wire Notes Line width 12 rgb(247, 150, 0)
+	12700 1900 13500 1900
+Wire Notes Line width 12 rgb(247, 150, 0)
+	12700 2450 13500 2450
+Wire Notes Line width 12 rgb(247, 150, 0)
+	13500 2450 13500 1900
+Wire Notes Line width 12 rgb(247, 150, 0)
+	12700 2450 12700 1900
+Text Notes 12800 2000 0    47   Italic 9
+Do Not Populate
+Wire Notes Line width 12 rgb(247, 150, 0)
+	9100 1350 9900 1350
+Wire Notes Line width 12 rgb(247, 150, 0)
+	9900 1900 9900 1350
+Text Notes 9200 1450 0    47   Italic 9
+Do Not Populate
+Wire Notes Line width 12 rgb(247, 150, 0)
+	9100 1900 9100 1350
+Wire Notes Line width 12 rgb(247, 150, 0)
+	9100 1900 9900 1900
 $EndSCHEMATC
