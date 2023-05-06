@@ -5,8 +5,8 @@ A_TAG=v3
 B_TAG=HEAD
 SCRATCH=/tmp/$$-2063
 
-#OUT_NAME=2063-Z80-${A_TAG}-${B_TAG}-delta
-OUT_NAME=2063-Z80-${A_TAG}-v4.3-delta
+OUT_NAME=2063-Z80-${A_TAG}-${B_TAG}-delta
+#OUT_NAME=2063-Z80-${A_TAG}-v4.3-delta
 
 
 A_TMP=${SCRATCH}/${A_TAG}
