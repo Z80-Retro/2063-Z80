@@ -61,3 +61,11 @@ for the Z80 Retro board, see this [PI Setup Guide](https://github.com/johnwinans
 - Change footprint for SD socket to increase the pad size for mounting the case.
 - Label R15 and R16 as DNP.
 - Move the [diffs](./diffs/) into their own directory.
+- V4.3.3 to V4.4.0 schematic [visual diff](https://github.com/Z80-Retro/2063-Z80/raw/main/diffs/2063-Z80-V4.3.3-V4.4.0-delta-schematic.pdf)
+- V4.3.3 to V4.4.0 PCB [visual diff](https://raw.githubusercontent.com/Z80-Retro/2063-Z80/main/diffs/2063-Z80-V4.3.3-V4.4.0-delta-pcb.png)
+
+## V4.3.3
+
+- Increase the values of the RS232 charge pump (on U12) capacitors to improve filtering.
+- V4.3.2 V4.3.3 schematic [visual diff](https://github.com/Z80-Retro/2063-Z80/raw/main/diffs/2063-Z80-V4.3.2-V4.3.3-delta-schematic.pdf)
+- V4.3.2 V4.3.3 PCB [visual diff](https://github.com/Z80-Retro/2063-Z80/raw/main/diffs/2063-Z80-V4.3.2-V4.3.3-delta-pcb.png) (no changes)
